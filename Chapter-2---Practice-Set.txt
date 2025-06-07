@@ -1,7 +1,7 @@
 
 
-#### Chapter 2 - Practice Set/01_problem1.c
-'''C
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -14,12 +14,13 @@ int main()
     // char dt = '21 dec 2020'; // Wrong!
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 2 - Practice Set/02_problem2.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -28,12 +29,13 @@ int main(){
     printf("The value of a is %f", a);
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 2 - Practice Set/03_problem3.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -43,12 +45,13 @@ int main(){
     printf("The value of a%97 is %d", a%97);
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 2 - Practice Set/04_problem4.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -65,12 +68,13 @@ int main(){
     printf("The value of e is %f", e);
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 2 - Practice Set/05_problem5.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -79,5 +83,6 @@ int main(){
     printf("The value of a is %f", a);
     return 0;
 }
-'''
+```
+
 

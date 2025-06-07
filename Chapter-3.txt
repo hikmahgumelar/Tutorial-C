@@ -1,7 +1,7 @@
 
 
-#### Chapter 3/01_conditionals.c
-'''C
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -18,12 +18,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 3/02_if_else.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -39,12 +40,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 3/03_non_zero.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -67,12 +69,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 3/04_logical.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -93,12 +96,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 3/05_else_if.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -121,12 +125,13 @@ int main(){
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 3/06_ternary.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -136,12 +141,13 @@ int main(){
     int b= 345452;
     a>b?printf("a is greater"):printf("b is greater");
 }
-'''
+```
 
 
 
-#### Chapter 3/07_switch.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -168,12 +174,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 3/08_quiz.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -209,5 +216,6 @@ int main(){
    }
     return 0;
 }   
-'''
+```
+
 

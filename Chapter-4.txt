@@ -1,7 +1,7 @@
 
 
-#### Chapter 4/01_loop.c
-'''C
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -10,12 +10,13 @@ int main(){
     printf("Happy Birthday!\n"); 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/02_while.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -28,12 +29,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/03_while_value.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -45,12 +47,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/04_infinite_loop.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -62,12 +65,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/05_quick_quiz.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -87,12 +91,13 @@ int main(){
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/06_increment_decrement.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -116,12 +121,13 @@ int main(){
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/07_do_while.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -135,12 +141,13 @@ int main(){
     
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/08_quick_quiz.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -154,12 +161,13 @@ int main(){
     
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/09_for.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -170,12 +178,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/10_quick_quiz.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -188,12 +197,13 @@ int main(){
     
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/11_decrementing_for_loop.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -205,12 +215,13 @@ int main(){
         
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 4/12_break_continue.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -228,5 +239,6 @@ int main(){
     
     return 0;
 }
-'''
+```
+
 

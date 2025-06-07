@@ -1,7 +1,7 @@
 
 
-#### Chapter 5/01_function.c
-'''C
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -42,12 +42,13 @@ int main(){
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 5/02_quick_quiz.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -74,12 +75,13 @@ int main(){
     good_evening();
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 5/03_change.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -97,12 +99,13 @@ int main(){
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 5/04_quick_quiz.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 #include <math.h>
@@ -112,12 +115,13 @@ int main(){
     printf("The area of this square is %f\n", pow(a, 2));
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 5/05_recursion.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -141,5 +145,6 @@ int main(){
     printf("The factorial of %d is %d", a, factorial(a));
     return 0;
 }
-'''
+```
+
 

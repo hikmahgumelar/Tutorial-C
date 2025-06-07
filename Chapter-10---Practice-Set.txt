@@ -1,7 +1,7 @@
 
 
-#### Chapter 10 - Practice Set/01_problem1.c
-'''C
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -15,12 +15,13 @@ int main(){
     fclose(fptr);
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 10 - Practice Set/02_problem2.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -37,12 +38,13 @@ int main(){
     
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 10 - Practice Set/03_problem3.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -71,12 +73,13 @@ int main()
     }
         return 0;
 }
-'''
+```
 
 
 
-#### Chapter 10 - Practice Set/04_problem4.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -110,12 +113,13 @@ int main()
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 10 - Practice Set/05_problem5.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -136,5 +140,6 @@ int main()
 
     return 0;
 }
-'''
+```
+
 

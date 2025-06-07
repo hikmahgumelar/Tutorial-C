@@ -1,7 +1,7 @@
 
 
-#### Chapter 7 - Practice Set/01_problem1.c
-'''C
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -16,12 +16,13 @@ int main()
     
     
 }
-'''
+```
 
 
 
-#### Chapter 7 - Practice Set/03_problem3.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -41,12 +42,13 @@ int main(){
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7 - Practice Set/04_problem4.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -68,12 +70,13 @@ int main(){
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7 - Practice Set/05_problem5.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -108,12 +111,13 @@ int main(){
 }
 
 
-'''
+```
 
 
 
-#### Chapter 7 - Practice Set/06_problem6.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -138,12 +142,13 @@ int main()
     
     
 }
-'''
+```
 
 
 
-#### Chapter 7 - Practice Set/07_problem7.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -170,12 +175,13 @@ int main()
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7 - Practice Set/08_problem8.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -204,12 +210,13 @@ int main()
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7 - Practice Set/09_problem9.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -230,5 +237,6 @@ int main(){
     
     return 0;
 }
-'''
+```
+
 

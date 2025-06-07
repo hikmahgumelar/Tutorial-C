@@ -1,7 +1,7 @@
 
 
-#### Chapter 1/01_variables.c
-'''C
+#### $file
+```C
 
 #include<stdio.h>
 
@@ -11,12 +11,13 @@ int main(){
     printf("The output of this program is %d", a);
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 1/02_variable_rules.c
-'''C
+
+#### $file
+```C
 
 #include<stdio.h>
 
@@ -26,12 +27,13 @@ int main(){
     int harry_good;
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 1/03_data_types.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -53,12 +55,13 @@ int main()
     printf("The value of b is %f\n", b);
     printf("The value of c is %c\n", c);
 }
-'''
+```
 
 
 
-#### Chapter 1/04_sizeof.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -69,12 +72,13 @@ int main() {
     return 0;
 }
 
-'''
+```
 
 
 
-#### Chapter 1/05_comments.c
-'''C
+
+#### $file
+```C
 
 /*
 Program: 05_comments.c
@@ -90,12 +94,13 @@ int main(){
     // Return 0 is returning 0 to the OS
     return 0; // This is return 
 }
-'''
+```
 
 
 
-#### Chapter 1/06_input.c
-'''C
+
+#### $file
+```C
 
 #include<stdio.h>
 
@@ -105,12 +110,13 @@ int main(){
     printf("The value of a is %d", a);
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 1/07_escape_sequence.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -122,5 +128,6 @@ int main(){
     printf("Hey I am good \\n nice");
     return 0;
 }
-'''
+```
+
 

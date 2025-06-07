@@ -1,7 +1,7 @@
 
 
-#### Chapter 7/01_arrays.c
-'''C
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -14,12 +14,13 @@ int main(){
     printf("Marks 0 and Marks 1 is %d %d", marks[0], marks[1]);
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7/02_array_input.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -46,12 +47,13 @@ int main(){
  
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7/03_other_array_init_ways.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -63,12 +65,13 @@ int main(){
     }
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7/04_pointer_arithmetic.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -91,12 +94,13 @@ int main(){
     printf("The value of ptr is %u\n", ptr);
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7/05_array_in_memory.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -118,12 +122,13 @@ int main(){
  
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7/06_array_using_pointers.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -145,12 +150,13 @@ int main(){
 
     return 0;
 }
-'''
+```
 
 
 
-#### Chapter 7/07_array_2d.c
-'''C
+
+#### $file
+```C
 
 #include <stdio.h>
 
@@ -186,5 +192,6 @@ int main()
 
     return 0;
 }
-'''
+```
+
 
