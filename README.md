@@ -1,5 +1,10 @@
+#### Chapter-0.txt
 
-##### Chapter 0/01_first.c 
+'''C
+
+
+
+########### Chapter 0/01_first.c ###########
 
 
 #include<stdio.h>
@@ -8,11 +13,616 @@ int main(){
     printf("Hello World"); 
     return 0;
 }
+'''
+#### Chapter-10---Practice-Set.txt
+
+'''C
 
 
 
-########### Chapter 1.txt ###########
+########### Chapter 10 - Practice Set/01_problem1.c ###########
 
+
+#include <stdio.h>
+
+int main(){
+    FILE *fptr;
+    int num1, num2, num3;
+    fptr = fopen("file.txt", "r");
+    fscanf(fptr, "%d %d %d", &num1, &num2, &num3); 
+    printf("The values are %d %d %d \n", num1, num2, num3);
+    
+    fclose(fptr);
+    return 0;
+}
+
+########### Chapter 10 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    FILE *fptr; 
+    int num=4;
+    fptr = fopen("table.txt", "w");
+
+    for (int i = 0; i < 10; i++)
+    {
+        fprintf(fptr, "%d", num*(i+1));
+        fprintf(fptr, "%c", '\n');
+    }
+    
+    return 0;
+}
+
+########### Chapter 10 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    FILE *ptr;
+    FILE *ptr2;
+
+    ptr = fopen("harry.txt", "r");
+    ptr2 = fopen("harry3.txt", "a");
+    while (1)
+    {
+       
+        ch = fgetc(ptr); 
+        // when all the content of a file has been read break
+        if (ch == EOF)
+        {
+            break;
+        }
+        else{
+            fprintf(ptr2, "%c", ch);
+            fprintf(ptr2, "%c", ch);
+            printf("%c", ch);
+        }
+    }
+        return 0;
+}
+
+########### Chapter 10 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    FILE *ptr;
+    char name1[34], name2[34];
+    int salary1, salary2;
+    ptr = fopen("salary.txt", "w");
+
+    printf("Enter the name of Employee \n");
+    scanf("%s", name1);
+
+    printf("Enter the salary of Employee \n");
+    scanf("%d", &salary1);
+
+    printf("Enter the name of Employee 2\n");
+    scanf("%s", name2);
+
+    printf("Enter the salary of Employee 2\n");
+    scanf("%d", &salary2);
+
+    fprintf(ptr, "%s", name1);
+    fprintf(ptr, "%s", ", ");
+    fprintf(ptr, "%d", salary1);
+    fprintf(ptr, "%c", '\n');
+     fprintf(ptr, "%s", name2);
+    fprintf(ptr, "%s", ", ");
+    fprintf(ptr, "%d", salary2);
+    fprintf(ptr, "%c", '\n');
+
+    return 0;
+}
+
+########### Chapter 10 - Practice Set/05_problem5.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    FILE *ptr;  
+    int num;
+    ptr = fopen("int.txt", "r");
+    fscanf(ptr, "%d", &num); 
+
+    fclose(ptr);
+
+    ptr = fopen("int.txt", "w");
+    fprintf(ptr, "%d", 2*num); 
+
+    fclose(ptr);
+ 
+
+    return 0;
+}
+'''
+#### Chapter-10.txt
+
+'''C
+
+
+
+########### Chapter 10/01_file.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    FILE *ptr;
+    ptr = fopen("harry.txt", "r");
+    int num;
+    fscanf(ptr, "%d", &num);
+    printf("The value of num is %d \n", num);
+
+    fscanf(ptr, "%d", &num);
+    printf("The value of num is %d \n", num);
+
+    fclose(ptr);
+    
+    return 0;
+}
+
+########### Chapter 10/02_quick_quiz.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    FILE *ptr;
+    ptr = fopen("harry2.txt", "r");
+
+    if(ptr == NULL){
+        printf("The file does not exist sorry! \n");
+        
+    }
+    else{
+
+    int num;
+    fscanf(ptr, "%d", &num);
+    printf("The value of num is %d \n", num);
+
+    fscanf(ptr, "%d", &num);
+    printf("The value of num is %d \n", num);
+
+    fclose(ptr);
+    
+    }
+    return 0;
+}
+
+########### Chapter 10/03_file_write.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    FILE *fptr;
+    fptr = fopen("harry.txt", "a");
+    int num = 432;
+    fprintf(fptr, "%d", num);
+    fclose(fptr);
+
+    return 0;
+}
+
+########### Chapter 10/04_fgetc_fputc.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    FILE *ptr;
+    ptr = fopen("harry.txt", "a");
+    // char c = fgetc(ptr); // used to read a character from file
+    // printf("%c", c);
+    fputc('c', ptr);
+    return 0;
+}
+
+########### Chapter 10/05_reading_cbyc.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    FILE *ptr;
+    ptr = fopen("harry.txt", "r");
+    while (1)
+    {
+        ch = fgetc(ptr); 
+        printf("%c", ch);
+        // when all the content of a file has been read break
+        if (ch == EOF)
+        {
+            break;
+        }
+    }
+        return 0;
+}
+'''
+#### Chapter-11---Practice-Set.txt
+
+'''C
+
+
+
+########### Chapter 11 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){ 
+    int n = 6;
+    int* ptr;
+    ptr = (int*) malloc(n*sizeof(int));
+    ptr[0] = 45;
+    printf("%d \n", ptr[0]);
+    
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 6;
+    int *ptr;
+    ptr = (int *)malloc(n * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &ptr[i]);
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 6;
+    int *ptr;
+    ptr = (int *)calloc(n,  sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &ptr[i]);
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 5;
+    int *ptr;
+    ptr = (int *)calloc(n, sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &ptr[i]);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    n = 10;
+    ptr = (int *)realloc(ptr, 10 * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &ptr[i]);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/05_problem5.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 10;
+    int *ptr;
+    ptr = (int *)malloc(n *sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+      ptr[i] = 7 * (i+1);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    n = 15;
+    ptr = (int *)realloc(ptr, 10 * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        ptr[i] = 7 * (i+1);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/06_problem6.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 10;
+    int *ptr;
+    ptr = (int *)calloc(n, sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+      ptr[i] = 7 * (i+1);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    n = 15;
+    ptr = (int *)realloc(ptr, 10 * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        ptr[i] = 7 * (i+1);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}
+'''
+#### Chapter-11.txt
+
+'''C
+
+
+
+########### Chapter 11/01_dma.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int n;
+    int* ptr;
+    scanf("%d", &n);
+    ptr = (int*) malloc(n * sizeof(int));
+    // int arr[n]; // Not allowed in c
+    ptr[0] = 3;
+    ptr [1]= 6;
+    printf("%d", ptr[0]);
+    return 0;
+}
+
+########### Chapter 11/02_quick_quiz.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float n = 5;
+    float* ptr; 
+    ptr = (float*) malloc(n * sizeof(float)); 
+
+    ptr[0] = 3.345;
+    ptr [1]= 16.345; 
+    ptr [2]= 6.345; 
+    ptr [3]= 56.345; 
+    ptr [4]= 66.345; 
+
+    printf("%.2f\n", ptr[0]);
+    printf("%.2f\n", ptr[1]);
+    printf("%.2f\n", ptr[2]);
+    printf("%.2f\n", ptr[3]);
+    printf("%.2f\n", ptr[4]); 
+    return 0;
+}
+
+########### Chapter 11/03_quick_quiz.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int n;
+    int* ptr;
+    scanf("%d", &n);
+    ptr = (int*) calloc(n, sizeof(int));
+    // int arr[n]; // Not allowed in c
+    ptr[0] = 3; 
+    printf("%d", ptr[0]);
+    return 0;
+}
+
+########### Chapter 11/04_free.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int n;
+    int* ptr;
+    scanf("%d", &n);
+    ptr = (int*) malloc(n * sizeof(int));
+    // int arr[n]; // Not allowed in c
+    ptr[0] = 3; 
+    free(ptr);
+    printf("%d", ptr[0]);
+    return 0;
+}
+
+########### Chapter 11/05_realloc.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int n = 5;
+    int* ptr; 
+    ptr = (int*) malloc(n * sizeof(int)); 
+    ptr[0] = 3;  
+    printf("%d", ptr[0]);
+
+    ptr = (int*) realloc(ptr, 10 * sizeof(int)); 
+    printf("%d", ptr[0]);
+    return 0;
+}
+'''
+#### Chapter-1---Practice-Set.txt
+
+'''C
+
+
+
+########### Chapter 1 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    // int length = 3;
+    // int breadth = 6;
+    int length, breadth;
+    printf("Enter length\n");
+    scanf("%d", &length);
+
+    printf("Enter breadth\n");
+    scanf("%d", &breadth);
+
+    printf("The area of this rectangle is %d", length*breadth);
+    return 0;
+}
+
+########### Chapter 1 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int r = 6;
+    int height = 10;
+    printf("The area of circle with radius %d is %f\n", r, 3.14*r*r);
+    printf("The volume of cylinder with radius %d and height %d is %f", r, height,  3.14*r*r*height);
+    return 0;
+}
+
+########### Chapter 1 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    float c = 37.0, f;
+
+    f = ((9.0/5.0)*c) + 32;
+    printf("The value in Fahrenheit is %f", f);
+
+    return 0;
+}
+
+########### Chapter 1 - Practice Set/04_problem4.c ###########
+
+
+ #include <stdio.h>
+ 
+ int main(){
+    float p = 34.1;
+    int r = 8;
+    int t = 5;
+    printf("The value of simple interest is %f ", (p*r*t)/100);
+    return 0;
+ }
+'''
+#### Chapter-1.txt
+
+'''C
 
 
 
@@ -120,9 +730,10 @@ int main(){
     printf("Hey I am good \\n nice");
     return 0;
 }
+'''
+#### Chapter-2---Practice-Set.txt
 
-########### Chapter 2 - Practice Set.txt ###########
-
+'''C
 
 
 
@@ -193,9 +804,10 @@ int main(){
     printf("The value of a is %f", a);
     return 0;
 }
+'''
+#### Chapter-2.txt
 
-########### Chapter 2.txt ###########
-
+'''C
 
 
 
@@ -285,9 +897,10 @@ int main(){
     printf("%d\n", n);
     return 0;
 }
+'''
+#### Chapter-3---Practice-Set.txt
 
-########### Chapter 3 - Practice Set.txt ###########
-
+'''C
 
 
 
@@ -425,9 +1038,10 @@ int main(){
     }
     return 0;
 }
+'''
+#### Chapter-3.txt
 
-########### Chapter 3.txt ###########
-
+'''C
 
 
 
@@ -619,9 +1233,10 @@ int main(){
    }
     return 0;
 }   
+'''
+#### Chapter-4---Practice-set.txt
 
-########### Chapter 4 - Practice set.txt ###########
-
+'''C
 
 
 
@@ -842,9 +1457,10 @@ int main()
 
     return 0;
 }
+'''
+#### Chapter-4.txt
 
-########### Chapter 4.txt ###########
-
+'''C
 
 
 
@@ -1043,9 +1659,10 @@ int main(){
     
     return 0;
 }
+'''
+#### Chapter-5---Practice-Set.txt
 
-########### Chapter 5 - Practice Set.txt ###########
-
+'''C
 
 
 
@@ -1186,9 +1803,10 @@ int main(){
     
     return 0;
 }
+'''
+#### Chapter-5.txt
 
-########### Chapter 5.txt ###########
-
+'''C
 
 
 
@@ -1321,9 +1939,10 @@ int main(){
     printf("The factorial of %d is %d", a, factorial(a));
     return 0;
 }
+'''
+#### Chapter-6---Practice-Set.txt
 
-########### Chapter 6 - Practice Set.txt ###########
-
+'''C
 
 
 
@@ -1467,9 +2086,10 @@ int main(){
 
     return 0;
 }
+'''
+#### Chapter-6.txt
 
-########### Chapter 6.txt ###########
-
+'''C
 
 
 
@@ -1596,9 +2216,10 @@ int main(){
     printf("The value of a is %d and the value of b is %d", a, b);
     return 0;
 }
+'''
+#### Chapter-7---Practice-Set.txt
 
-########### Chapter 7 - Practice Set.txt ###########
-
+'''C
 
 
 
@@ -1811,9 +2432,10 @@ int main(){
     
     return 0;
 }
+'''
+#### Chapter-7.txt
 
-########### Chapter 7.txt ###########
-
+'''C
 
 
 
@@ -1985,9 +2607,10 @@ int main()
 
     return 0;
 }
+'''
+#### Chapter-8---Practice-Set.txt
 
-########### Chapter 8 - Practice Set.txt ###########
-
+'''C
 
 
 
@@ -2184,9 +2807,10 @@ int main(){
     
     return 0;
 }
+'''
+#### Chapter-8.txt
 
-########### Chapter 8.txt ###########
-
+'''C
 
 
 
@@ -2281,9 +2905,10 @@ int main()
 
     return 0;
 }
+'''
+#### Chapter-9---Practice-Set.txt
 
-########### Chapter 9 - Practice Set.txt ###########
-
+'''C
 
 
 
@@ -2466,9 +3091,10 @@ int main()
     printf("%d", compare(d1, d2));
     return 0;
 }
+'''
+#### Chapter-9.txt
 
-########### Chapter 9.txt ###########
-
+'''C
 
 
 
@@ -2659,602 +3285,15 @@ int main(){
     
     return 0;
 }
+'''
+#### Project-1.txt
 
-########### Chapter 10 - Practice Set/01_problem1.c ###########
+'''C
 
 
-#include <stdio.h>
 
-int main(){
-    FILE *fptr;
-    int num1, num2, num3;
-    fptr = fopen("file.txt", "r");
-    fscanf(fptr, "%d %d %d", &num1, &num2, &num3); 
-    printf("The values are %d %d %d \n", num1, num2, num3);
-    
-    fclose(fptr);
-    return 0;
-}
+########### Project 1/main.c ###########
 
-########### Chapter 10 - Practice Set/02_problem2.c ###########
-
-
-#include <stdio.h>
-
-int main(){
-    FILE *fptr; 
-    int num=4;
-    fptr = fopen("table.txt", "w");
-
-    for (int i = 0; i < 10; i++)
-    {
-        fprintf(fptr, "%d", num*(i+1));
-        fprintf(fptr, "%c", '\n');
-    }
-    
-    return 0;
-}
-
-########### Chapter 10 - Practice Set/03_problem3.c ###########
-
-
-#include <stdio.h>
-
-int main()
-{
-    char ch;
-    FILE *ptr;
-    FILE *ptr2;
-
-    ptr = fopen("harry.txt", "r");
-    ptr2 = fopen("harry3.txt", "a");
-    while (1)
-    {
-       
-        ch = fgetc(ptr); 
-        // when all the content of a file has been read break
-        if (ch == EOF)
-        {
-            break;
-        }
-        else{
-            fprintf(ptr2, "%c", ch);
-            fprintf(ptr2, "%c", ch);
-            printf("%c", ch);
-        }
-    }
-        return 0;
-}
-
-########### Chapter 10 - Practice Set/04_problem4.c ###########
-
-
-#include <stdio.h>
-
-int main()
-{
-    FILE *ptr;
-    char name1[34], name2[34];
-    int salary1, salary2;
-    ptr = fopen("salary.txt", "w");
-
-    printf("Enter the name of Employee \n");
-    scanf("%s", name1);
-
-    printf("Enter the salary of Employee \n");
-    scanf("%d", &salary1);
-
-    printf("Enter the name of Employee 2\n");
-    scanf("%s", name2);
-
-    printf("Enter the salary of Employee 2\n");
-    scanf("%d", &salary2);
-
-    fprintf(ptr, "%s", name1);
-    fprintf(ptr, "%s", ", ");
-    fprintf(ptr, "%d", salary1);
-    fprintf(ptr, "%c", '\n');
-     fprintf(ptr, "%s", name2);
-    fprintf(ptr, "%s", ", ");
-    fprintf(ptr, "%d", salary2);
-    fprintf(ptr, "%c", '\n');
-
-    return 0;
-}
-
-########### Chapter 10 - Practice Set/05_problem5.c ###########
-
-
-#include <stdio.h>
-
-int main()
-{
-    FILE *ptr;  
-    int num;
-    ptr = fopen("int.txt", "r");
-    fscanf(ptr, "%d", &num); 
-
-    fclose(ptr);
-
-    ptr = fopen("int.txt", "w");
-    fprintf(ptr, "%d", 2*num); 
-
-    fclose(ptr);
- 
-
-    return 0;
-}
-
-
-
-
-########### Chapter 10/01_file.c ###########
-
-
-#include <stdio.h>
-
-int main()
-{
-    FILE *ptr;
-    ptr = fopen("harry.txt", "r");
-    int num;
-    fscanf(ptr, "%d", &num);
-    printf("The value of num is %d \n", num);
-
-    fscanf(ptr, "%d", &num);
-    printf("The value of num is %d \n", num);
-
-    fclose(ptr);
-    
-    return 0;
-}
-
-########### Chapter 10/02_quick_quiz.c ###########
-
-
-#include <stdio.h>
-
-int main()
-{
-    FILE *ptr;
-    ptr = fopen("harry2.txt", "r");
-
-    if(ptr == NULL){
-        printf("The file does not exist sorry! \n");
-        
-    }
-    else{
-
-    int num;
-    fscanf(ptr, "%d", &num);
-    printf("The value of num is %d \n", num);
-
-    fscanf(ptr, "%d", &num);
-    printf("The value of num is %d \n", num);
-
-    fclose(ptr);
-    
-    }
-    return 0;
-}
-
-########### Chapter 10/03_file_write.c ###########
-
-
-#include <stdio.h>
-
-int main()
-{
-    FILE *fptr;
-    fptr = fopen("harry.txt", "a");
-    int num = 432;
-    fprintf(fptr, "%d", num);
-    fclose(fptr);
-
-    return 0;
-}
-
-########### Chapter 10/04_fgetc_fputc.c ###########
-
-
-#include <stdio.h>
-
-int main()
-{
-    FILE *ptr;
-    ptr = fopen("harry.txt", "a");
-    // char c = fgetc(ptr); // used to read a character from file
-    // printf("%c", c);
-    fputc('c', ptr);
-    return 0;
-}
-
-########### Chapter 10/05_reading_cbyc.c ###########
-
-
-#include <stdio.h>
-
-int main()
-{
-    char ch;
-    FILE *ptr;
-    ptr = fopen("harry.txt", "r");
-    while (1)
-    {
-        ch = fgetc(ptr); 
-        printf("%c", ch);
-        // when all the content of a file has been read break
-        if (ch == EOF)
-        {
-            break;
-        }
-    }
-        return 0;
-}
-
-########### Chapter 11 - Practice Set.txt ###########
-
-
-
-
-########### Chapter 11 - Practice Set/01_problem1.c ###########
-
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(){ 
-    int n = 6;
-    int* ptr;
-    ptr = (int*) malloc(n*sizeof(int));
-    ptr[0] = 45;
-    printf("%d \n", ptr[0]);
-    
-    return 0;
-}
-
-########### Chapter 11 - Practice Set/02_problem2.c ###########
-
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-    int n = 6;
-    int *ptr;
-    ptr = (int *)malloc(n * sizeof(int));
-
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &ptr[i]);
-    }
-
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d \n", ptr[i]);
-    }
-
-    return 0;
-}
-
-########### Chapter 11 - Practice Set/03_problem3.c ###########
-
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-    int n = 6;
-    int *ptr;
-    ptr = (int *)calloc(n,  sizeof(int));
-
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &ptr[i]);
-    }
-
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d \n", ptr[i]);
-    }
-
-    return 0;
-}
-
-#### Chapter 11 - Practice Set/04_problem4.c ###########
-
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-    int n = 5;
-    int *ptr;
-    ptr = (int *)calloc(n, sizeof(int));
-
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &ptr[i]);
-    }
-
-    printf("The Array is \n");
-
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d \n", ptr[i]);
-    }
-
-    n = 10;
-    ptr = (int *)realloc(ptr, 10 * sizeof(int));
-
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &ptr[i]);
-    }
-
-    printf("The Array is \n");
-
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d \n", ptr[i]);
-    }
-
-    return 0;
-}
-
-########### Chapter 11 - Practice Set/05_problem5.c ###########
-
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-    int n = 10;
-    int *ptr;
-    ptr = (int *)malloc(n *sizeof(int));
-
-    for (int i = 0; i < n; i++)
-    {
-      ptr[i] = 7 * (i+1);
-    }
-
-    printf("The Array is \n");
-
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d \n", ptr[i]);
-    }
-
-    n = 15;
-    ptr = (int *)realloc(ptr, 10 * sizeof(int));
-
-    for (int i = 0; i < n; i++)
-    {
-        ptr[i] = 7 * (i+1);
-    }
-
-    printf("The Array is \n");
-
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d \n", ptr[i]);
-    }
-
-    return 0;
-}
-
-#### Chapter 11 - Practice Set/06_problem6.c 
-```C
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-    int n = 10;
-    int *ptr;
-    ptr = (int *)calloc(n, sizeof(int));
-
-    for (int i = 0; i < n; i++)
-    {
-      ptr[i] = 7 * (i+1);
-    }
-
-    printf("The Array is \n");
-
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d \n", ptr[i]);
-    }
-
-    n = 15;
-    ptr = (int *)realloc(ptr, 10 * sizeof(int));
-
-    for (int i = 0; i < n; i++)
-    {
-        ptr[i] = 7 * (i+1);
-    }
-
-    printf("The Array is \n");
-
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d \n", ptr[i]);
-    }
-
-    return 0;
-}
-
-```
-
-#### Chapter 11/01_dma.c 
-```C
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(){
-    int n;
-    int* ptr;
-    scanf("%d", &n);
-    ptr = (int*) malloc(n * sizeof(int));
-    // int arr[n]; // Not allowed in c
-    ptr[0] = 3;
-    ptr [1]= 6;
-    printf("%d", ptr[0]);
-    return 0;
-}
-```
-#### Chapter 11/02_quick_quiz.c
-```C
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(){
-    float n = 5;
-    float* ptr; 
-    ptr = (float*) malloc(n * sizeof(float)); 
-
-    ptr[0] = 3.345;
-    ptr [1]= 16.345; 
-    ptr [2]= 6.345; 
-    ptr [3]= 56.345; 
-    ptr [4]= 66.345; 
-
-    printf("%.2f\n", ptr[0]);
-    printf("%.2f\n", ptr[1]);
-    printf("%.2f\n", ptr[2]);
-    printf("%.2f\n", ptr[3]);
-    printf("%.2f\n", ptr[4]); 
-    return 0;
-}
-```
-#### Chapter 11/03_quick_quiz.c 
-
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(){
-    int n;
-    int* ptr;
-    scanf("%d", &n);
-    ptr = (int*) calloc(n, sizeof(int));
-    // int arr[n]; // Not allowed in c
-    ptr[0] = 3; 
-    printf("%d", ptr[0]);
-    return 0;
-}
-```
-#### Chapter 11/04_free.c 
-
-```C
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(){
-    int n;
-    int* ptr;
-    scanf("%d", &n);
-    ptr = (int*) malloc(n * sizeof(int));
-    // int arr[n]; // Not allowed in c
-    ptr[0] = 3; 
-    free(ptr);
-    printf("%d", ptr[0]);
-    return 0;
-}
-```
-#### Chapter 11/05_realloc.c 
-
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(){
-    int n = 5;
-    int* ptr; 
-    ptr = (int*) malloc(n * sizeof(int)); 
-    ptr[0] = 3;  
-    printf("%d", ptr[0]);
-
-    ptr = (int*) realloc(ptr, 10 * sizeof(int)); 
-    printf("%d", ptr[0]);
-    return 0;
-}
-
-```
-
-
-
-#### Chapter 1 - Practice Set/01_problem1.c 
-
-
-#include <stdio.h>
-
-int main(){
-    // int length = 3;
-    // int breadth = 6;
-    int length, breadth;
-    printf("Enter length\n");
-    scanf("%d", &length);
-
-    printf("Enter breadth\n");
-    scanf("%d", &breadth);
-
-    printf("The area of this rectangle is %d", length*breadth);
-    return 0;
-}
-
-########### Chapter 1 - Practice Set/02_problem2.c ###########
-
-
-#include <stdio.h>
-
-int main(){
-    int r = 6;
-    int height = 10;
-    printf("The area of circle with radius %d is %f\n", r, 3.14*r*r);
-    printf("The volume of cylinder with radius %d and height %d is %f", r, height,  3.14*r*r*height);
-    return 0;
-}
-
-########### Chapter 1 - Practice Set/03_problem3.c ###########
-
-
-#include <stdio.h>
-
-int main(){
-    float c = 37.0, f;
-
-    f = ((9.0/5.0)*c) + 32;
-    printf("The value in Fahrenheit is %f", f);
-
-    return 0;
-}
-
-########### Chapter 1 - Practice Set/04_problem4.c ###########
-
-
- #include <stdio.h>
- 
- int main(){
-    float p = 34.1;
-    int r = 8;
-    int t = 5;
-    printf("The value of simple interest is %f ", (p*r*t)/100);
-    return 0;
- }
-
-
-
-
-#### Project 1/main.c 
-```C
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -3294,14 +3333,16 @@ int main()
 
     return 0;
 }
-```
+
+'''
+#### Project-2.txt
+
+'''C
 
 
 
+########### Project 2/main.c ###########
 
-#### Project 2/main.c
-
-```C
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -3362,5 +3403,22 @@ int main()
 
     return 0;
 }
+'''
+#### readme.sh
 
-```
+'''C
+
+#!/bin/bash
+
+rm -f all-catatan.txt
+
+for f in *.txt; do
+  echo -e $f
+  echo -e "\n\n#### $f\n" >> all-catatan.txt
+  echo '```C' >> all-catatan.txt
+  echo >> all-catatan.txt
+  cat "$f" >> all-catatan.txt
+  echo -e "\n```" >> all-catatan.txt
+done
+
+'''
