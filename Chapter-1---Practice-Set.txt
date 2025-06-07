@@ -1,7 +1,8 @@
 
 
 #### Chapter-1---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -16,11 +17,13 @@ int main(){
 
     printf("The area of this rectangle is %d", length*breadth);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -29,11 +32,13 @@ int main(){
     printf("The area of circle with radius %d is %f\n", r, 3.14*r*r);
     printf("The volume of cylinder with radius %d and height %d is %f", r, height,  3.14*r*r*height);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -43,11 +48,13 @@ int main(){
     printf("The value in Fahrenheit is %f", f);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1---Practice-Set/04_problem4.c
-```c
+```C
+
  #include <stdio.h>
  
  int main(){
@@ -56,4 +63,5 @@ int main(){
     int t = 5;
     printf("The value of simple interest is %f ", (p*r*t)/100);
     return 0;
- }```
+ }
+```

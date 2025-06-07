@@ -1,7 +1,8 @@
 
 
 #### Chapter-10---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -13,11 +14,13 @@ int main(){
     
     fclose(fptr);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -32,11 +35,13 @@ int main(){
     }
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -63,11 +68,13 @@ int main()
         }
     }
         return 0;
-}```
+}
+```
 
 
 #### Chapter-10---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -99,11 +106,13 @@ int main()
     fprintf(ptr, "%c", '\n');
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -122,4 +131,5 @@ int main()
  
 
     return 0;
-}```
+}
+```

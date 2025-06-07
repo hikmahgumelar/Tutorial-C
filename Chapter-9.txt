@@ -1,7 +1,8 @@
 
 
 #### Chapter-9/01_structure.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -21,11 +22,13 @@ int main(){
     printf("%d %f %s", e1.code, e1.salary, e1.name);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/02_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -73,11 +76,13 @@ int main(){
     printf("%d %f %s\n", e3.code, e3.salary, e3.name);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/03_struct_arrays.c
-```c
+```C
+
 #include <stdio.h>
 
 struct employee
@@ -96,11 +101,13 @@ int main()
     struct employee harry = {100, 71.22, "harry"};
     printf("%d %f %s", harry.code, harry.salary, harry.name);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/04_pointer_to_struct.c
-```c
+```C
+
 #include <stdio.h>
 
 struct employee
@@ -121,11 +128,13 @@ int main()
     printf("%d", ptr->code); // Exactly same as  (*ptr).code
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/05_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -153,11 +162,13 @@ int main()
 
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/06_typedef.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -185,4 +196,5 @@ int main(){
     printf("%d %f %s\n", ptr1->code, ptr1->salary, ptr1->name);
     
     return 0;
-}```
+}
+```

@@ -1,7 +1,8 @@
 
 
 #### Chapter-1/01_variables.c
-```c
+```C
+
 #include<stdio.h>
 
 int main(){
@@ -9,11 +10,13 @@ int main(){
     a = 6; // Variable initialization
     printf("The output of this program is %d", a);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1/02_variable_rules.c
-```c
+```C
+
 #include<stdio.h>
 
 int main(){
@@ -21,11 +24,13 @@ int main(){
     int Harry; 
     int harry_good;
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1/03_data_types.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -45,11 +50,13 @@ int main()
     printf("The value of a is %d\n", a);
     printf("The value of b is %f\n", b);
     printf("The value of c is %c\n", c);
-}```
+}
+```
 
 
 #### Chapter-1/04_sizeof.c
-```c
+```C
+
 #include <stdio.h>
 
 int main() {
@@ -58,11 +65,13 @@ int main() {
     printf("Size of float: %zu bytes\n", sizeof(float));
     return 0;
 }
+
 ```
 
 
 #### Chapter-1/05_comments.c
-```c
+```C
+
 /*
 Program: 05_comments.c
 Author: Harry
@@ -76,11 +85,13 @@ int main(){
     printf("Hello World");
     // Return 0 is returning 0 to the OS
     return 0; // This is return 
-}```
+}
+```
 
 
 #### Chapter-1/06_input.c
-```c
+```C
+
 #include<stdio.h>
 
 int main(){
@@ -88,11 +99,13 @@ int main(){
     scanf("%d", &a);
     printf("The value of a is %d", a);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1/07_escape_sequence.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -102,4 +115,5 @@ int main(){
     ch = '\n'; // represents a new line
     printf("Hey I am good \\n nice");
     return 0;
-}```
+}
+```

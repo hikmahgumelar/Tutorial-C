@@ -1,7 +1,8 @@
 
 
 #### Chapter-6---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -10,11 +11,13 @@ int main(){
     printf("The address of i is %u\n", &i);
     printf("The value of i is %d\n", *ptr);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -29,11 +32,13 @@ int main(){
     printf("The address of i is %u\n", &i); 
     returning_5(ptr);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 void change_to_ten_times(int*);
@@ -49,11 +54,13 @@ int main(){
     printf("The value of x is %d\n", x);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 void change_to_thirty_times(int*);
@@ -69,11 +76,13 @@ int main(){
     printf("The value of x is %d\n", x);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -103,11 +112,13 @@ int main(){
     printf("The address of sum is %u and of average is %u", ptr1, ptr2 );
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/06_problem6.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -118,11 +129,13 @@ int main(){
     printf("The value of i is %d\n", *ptr1);
     printf("The value of i is %d\n", **ptr2);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/07_problem7.c
-```c
+```C
+
 #include <stdio.h>
 
 void change_to_thirty_times(int);
@@ -138,4 +151,5 @@ int main(){
     printf("The value of x is %d\n", x);
 
     return 0;
-}```
+}
+```

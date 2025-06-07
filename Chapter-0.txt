@@ -1,10 +1,12 @@
 
 
 #### Chapter-0/01_first.c
-```c
+```C
+
 #include<stdio.h>
 
 int main(){
     printf("Hello World"); 
     return 0;
-}```
+}
+```

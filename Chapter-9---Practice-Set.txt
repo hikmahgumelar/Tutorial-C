@@ -1,7 +1,8 @@
 
 
 #### Chapter-9---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 struct vector{
@@ -13,11 +14,13 @@ int main(){
     struct vector v = {1, 2};
     printf("The value of vector is %di + %d j", v.i, v.j);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -37,11 +40,13 @@ int main(){
     V v3 = sumVector(v1, v2);
     printf("The value of vector v3 is %di + %d j", v3.i, v3.j);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 typedef struct emp{
     int salary;
@@ -60,11 +65,13 @@ int main(){
     printf("The value of salary is %d and the value of score is %.2f \n", ptr->salary, ptr->score);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 typedef struct c{
@@ -76,11 +83,13 @@ int main(){
     Complex c = {1, 2};
     printf("The value of Complex number is %d + %di ", c.real, c.imaginary);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 typedef struct c
@@ -106,11 +115,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/08_problem8.c
-```c
+```C
+
 #include <stdio.h>
 
 struct bankacc{
@@ -123,11 +134,13 @@ struct bankacc{
 int main(){
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/09_problem9.c
-```c
+```C
+
 #include <stdio.h>
 
 typedef struct Date
@@ -177,4 +190,5 @@ int main()
     DT d2 = {12, 8, 2154};
     printf("%d", compare(d1, d2));
     return 0;
-}```
+}
+```

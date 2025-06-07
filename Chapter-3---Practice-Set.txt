@@ -1,7 +1,8 @@
 
 
 #### Chapter-3---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -12,11 +13,13 @@ int main()
     else
         printf("I am not 11"); 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -42,11 +45,13 @@ int main(){
         printf("You are passed!");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -68,11 +73,13 @@ int main(){
     }
     printf("The total tax you need to pay is %.3f", tax);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -89,11 +96,13 @@ int main(){
 
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/05_problem5.c
-```c
+```C
+
 // https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html
 
 #include <stdio.h>
@@ -110,11 +119,13 @@ int main(){
          printf("This character not lowecase \n");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/06_problem.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -132,4 +143,5 @@ int main(){
         printf("The greatest of all is %d", d);
     }
     return 0;
-}```
+}
+```

@@ -1,18 +1,21 @@
 
 
 #### Chapter-4/01_loop.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
     // Problem: Print Happy Birthday 1 Lakh times
     printf("Happy Birthday!\n"); 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/02_while.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -23,11 +26,13 @@ int main(){
         i++;
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/03_while_value.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -37,11 +42,13 @@ int main(){
         i++;
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/04_infinite_loop.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -51,11 +58,13 @@ int main(){
         i++;
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/05_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -73,11 +82,13 @@ int main(){
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/06_increment_decrement.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -99,11 +110,13 @@ int main(){
 
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/07_do_while.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -115,11 +128,13 @@ int main(){
     
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/08_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -131,11 +146,13 @@ int main(){
     }while(i<=n);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/09_for.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -144,11 +161,13 @@ int main(){
         printf("The value of i is %d\n");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/10_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -159,11 +178,13 @@ int main(){
     }
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/11_decrementing_for_loop.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){ 
@@ -173,11 +194,13 @@ int main(){
     }
         
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/12_break_continue.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -193,4 +216,5 @@ int main(){
     printf("For loop is done!");
     
     return 0;
-}```
+}
+```

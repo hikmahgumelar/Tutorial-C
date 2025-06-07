@@ -1,17 +1,20 @@
 
 
 #### Chapter-0/01_first.c
-```c
+```C
+
 #include<stdio.h>
 
 int main(){
     printf("Hello World"); 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -23,11 +26,13 @@ int main(){
     
     fclose(fptr);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -42,11 +47,13 @@ int main(){
     }
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -73,11 +80,13 @@ int main()
         }
     }
         return 0;
-}```
+}
+```
 
 
 #### Chapter-10---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -109,11 +118,13 @@ int main()
     fprintf(ptr, "%c", '\n');
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -132,11 +143,13 @@ int main()
  
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10/01_file.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -153,11 +166,13 @@ int main()
     fclose(ptr);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10/02_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -182,11 +197,13 @@ int main()
     
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10/03_file_write.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -198,11 +215,13 @@ int main()
     fclose(fptr);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10/04_fgetc_fputc.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -213,11 +232,13 @@ int main()
     // printf("%c", c);
     fputc('c', ptr);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-10/05_reading_cbyc.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -236,11 +257,13 @@ int main()
         }
     }
         return 0;
-}```
+}
+```
 
 
 #### Chapter-11---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -252,11 +275,13 @@ int main(){
     printf("%d \n", ptr[0]);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -277,11 +302,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -302,11 +329,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -344,11 +373,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -386,11 +417,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11---Practice-Set/06_problem6.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -428,11 +461,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11/01_dma.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -446,11 +481,13 @@ int main(){
     ptr [1]= 6;
     printf("%d", ptr[0]);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11/02_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -471,11 +508,13 @@ int main(){
     printf("%.2f\n", ptr[3]);
     printf("%.2f\n", ptr[4]); 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11/03_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -488,11 +527,13 @@ int main(){
     ptr[0] = 3; 
     printf("%d", ptr[0]);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11/04_free.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -506,11 +547,13 @@ int main(){
     free(ptr);
     printf("%d", ptr[0]);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-11/05_realloc.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -524,11 +567,13 @@ int main(){
     ptr = (int*) realloc(ptr, 10 * sizeof(int)); 
     printf("%d", ptr[0]);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -543,11 +588,13 @@ int main(){
 
     printf("The area of this rectangle is %d", length*breadth);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -556,11 +603,13 @@ int main(){
     printf("The area of circle with radius %d is %f\n", r, 3.14*r*r);
     printf("The volume of cylinder with radius %d and height %d is %f", r, height,  3.14*r*r*height);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -570,11 +619,13 @@ int main(){
     printf("The value in Fahrenheit is %f", f);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1---Practice-Set/04_problem4.c
-```c
+```C
+
  #include <stdio.h>
  
  int main(){
@@ -583,11 +634,13 @@ int main(){
     int t = 5;
     printf("The value of simple interest is %f ", (p*r*t)/100);
     return 0;
- }```
+ }
+```
 
 
 #### Chapter-1/01_variables.c
-```c
+```C
+
 #include<stdio.h>
 
 int main(){
@@ -595,11 +648,13 @@ int main(){
     a = 6; // Variable initialization
     printf("The output of this program is %d", a);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1/02_variable_rules.c
-```c
+```C
+
 #include<stdio.h>
 
 int main(){
@@ -607,11 +662,13 @@ int main(){
     int Harry; 
     int harry_good;
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1/03_data_types.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -631,11 +688,13 @@ int main()
     printf("The value of a is %d\n", a);
     printf("The value of b is %f\n", b);
     printf("The value of c is %c\n", c);
-}```
+}
+```
 
 
 #### Chapter-1/04_sizeof.c
-```c
+```C
+
 #include <stdio.h>
 
 int main() {
@@ -644,11 +703,13 @@ int main() {
     printf("Size of float: %zu bytes\n", sizeof(float));
     return 0;
 }
+
 ```
 
 
 #### Chapter-1/05_comments.c
-```c
+```C
+
 /*
 Program: 05_comments.c
 Author: Harry
@@ -662,11 +723,13 @@ int main(){
     printf("Hello World");
     // Return 0 is returning 0 to the OS
     return 0; // This is return 
-}```
+}
+```
 
 
 #### Chapter-1/06_input.c
-```c
+```C
+
 #include<stdio.h>
 
 int main(){
@@ -674,11 +737,13 @@ int main(){
     scanf("%d", &a);
     printf("The value of a is %d", a);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-1/07_escape_sequence.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -688,11 +753,13 @@ int main(){
     ch = '\n'; // represents a new line
     printf("Hey I am good \\n nice");
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -703,22 +770,26 @@ int main()
     int v = 3 * 3;
     // char dt = '21 dec 2020'; // Wrong!
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
     float a = 3.0/8 - 2;
     printf("The value of a is %f", a);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -726,11 +797,13 @@ int main(){
     int a = 3349895;
     printf("The value of a%97 is %d", a%97);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -745,22 +818,26 @@ int main(){
     // 0
     printf("The value of e is %f", e);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
     float a = 3.0 + 1 ;
     printf("The value of a is %f", a);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2/01_variables.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -774,11 +851,13 @@ int main()
     printf("The value of a is %d and value of b is %d\n", a, b );
     printf("The value of c is %d and value of d is %d\n", c, d );
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2/02_arithmetic_operators.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -793,11 +872,13 @@ int main(){
     // int d = a^b;
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2/03_type_conversion.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -808,11 +889,13 @@ int main(){
     printf("The value of a/b is %f\n", c);
     printf("The value of d is %d", d);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2/04_associativity.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -829,11 +912,13 @@ int main(){
     // 81 + 21
     // 102
     return 0;
-}```
+}
+```
 
 
 #### Chapter-2/05_typecasting.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -843,11 +928,13 @@ int main(){
     n = (int) m; // convert the data type to int
     printf("%d\n", n);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -858,11 +945,13 @@ int main()
     else
         printf("I am not 11"); 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -888,11 +977,13 @@ int main(){
         printf("You are passed!");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -914,11 +1005,13 @@ int main(){
     }
     printf("The total tax you need to pay is %.3f", tax);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -935,11 +1028,13 @@ int main(){
 
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/05_problem5.c
-```c
+```C
+
 // https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html
 
 #include <stdio.h>
@@ -956,11 +1051,13 @@ int main(){
          printf("This character not lowecase \n");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3---Practice-Set/06_problem.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -978,11 +1075,13 @@ int main(){
         printf("The greatest of all is %d", d);
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/01_conditionals.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -997,11 +1096,13 @@ int main(){
         printf("Your age is divisible by 50\n");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/02_if_else.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1015,11 +1116,13 @@ int main(){
         printf("Your age is not greater than 10");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/03_non_zero.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1040,11 +1143,13 @@ int main(){
         printf("I am zero - I am not executed\n");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/04_logical.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1063,11 +1168,13 @@ int main(){
         }
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/05_else_if.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1088,11 +1195,13 @@ int main(){
 
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/06_ternary.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1100,11 +1209,13 @@ int main(){
     int a = 345;
     int b= 345452;
     a>b?printf("a is greater"):printf("b is greater");
-}```
+}
+```
 
 
 #### Chapter-3/07_switch.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1129,11 +1240,13 @@ int main(){
             printf("Nothing matched");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/08_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1167,11 +1280,13 @@ int main(){
     grade = 'F';
    }
     return 0;
-}   ```
+}   
+```
 
 
 #### Chapter-4---Practice-set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1183,11 +1298,13 @@ int main(){
     }
    
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4---Practice-set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1198,11 +1315,13 @@ int main(){
     }
    
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4---Practice-set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 int main() {
@@ -1214,11 +1333,13 @@ int main() {
     }
     printf("The sum of first 10 natural numbers is %d", sum);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4---Practice-set/06_problem6.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -1242,11 +1363,13 @@ int main()
 
     printf("The sum of first 10 natural numbers is %d", sum);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4---Practice-set/07_problem7.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1257,11 +1380,13 @@ int main(){
     }
     printf("The sum of the table of 8 is %d", sum);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4---Practice-set/08_problem8.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1277,11 +1402,13 @@ int main(){
     }
     printf("The factorial is %d", product);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4---Practice-set/09_problem9.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1299,11 +1426,13 @@ int main(){
     }
     printf("The factorial of %d is %d", n, product);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4---Practice-set/10_problem10.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -1337,11 +1466,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4---Practice-set/11_problem11.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -1385,22 +1516,26 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/01_loop.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
     // Problem: Print Happy Birthday 1 Lakh times
     printf("Happy Birthday!\n"); 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/02_while.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1411,11 +1546,13 @@ int main(){
         i++;
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/03_while_value.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1425,11 +1562,13 @@ int main(){
         i++;
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/04_infinite_loop.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1439,11 +1578,13 @@ int main(){
         i++;
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/05_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1461,11 +1602,13 @@ int main(){
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/06_increment_decrement.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1487,11 +1630,13 @@ int main(){
 
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/07_do_while.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1503,11 +1648,13 @@ int main(){
     
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/08_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1519,11 +1666,13 @@ int main(){
     }while(i<=n);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/09_for.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1532,11 +1681,13 @@ int main(){
         printf("The value of i is %d\n");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/10_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1547,11 +1698,13 @@ int main(){
     }
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/11_decrementing_for_loop.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){ 
@@ -1561,11 +1714,13 @@ int main(){
     }
         
     return 0;
-}```
+}
+```
 
 
 #### Chapter-4/12_break_continue.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1581,11 +1736,13 @@ int main(){
     printf("For loop is done!");
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 float average(int a, int b, int c);
@@ -1599,11 +1756,13 @@ int main(){
     int a = 3, b=6, c=5;
     printf("The average of a, b and c is %f", average(a, b, c));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 float c2f(float);
@@ -1616,11 +1775,13 @@ int main(){
     float c = 45;
     printf("Celsius to Fahrenheit for %f is %.2f", c, c2f(c));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -1634,11 +1795,13 @@ int main(){
     int m = 45;
     printf("The value of force is %f\n", force(m));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
@@ -1657,11 +1820,13 @@ int main(){
     int n = 7;
     printf("The value of fibonacci series at %d is %d", n, fibonacci(n));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1670,11 +1835,13 @@ int main(){
     // 6 6 4
     // 4 5 5
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5---Practice-Set/06_problem6.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -1692,11 +1859,13 @@ int sum_natural(int n){
 int main(){
     printf("The sum of first 5 natural numbers is %d", sum_natural(5));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5---Practice-Set/07_problem7.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1719,11 +1888,13 @@ int main(){
     }
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5/01_function.c
-```c
+```C
+
 #include <stdio.h>
 
 // Function prototype
@@ -1762,11 +1933,13 @@ int main(){
     printf("%d\n", c3);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5/02_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 void good_morning();
@@ -1791,11 +1964,13 @@ int main(){
     good_afternoon();
     good_evening();
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5/03_change.c
-```c
+```C
+
 #include <stdio.h>
 
 int change(int a);
@@ -1811,11 +1986,13 @@ int main(){
     printf("b is %d", b); 
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5/04_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 #include <math.h>
 
@@ -1823,11 +2000,13 @@ int main(){
     int a = 5;
     printf("The area of this square is %f\n", pow(a, 2));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-5/05_recursion.c
-```c
+```C
+
 #include <stdio.h>
 
 int factorial(int);
@@ -1849,11 +2028,13 @@ int main(){
     int a = 6;
     printf("The factorial of %d is %d", a, factorial(a));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1862,11 +2043,13 @@ int main(){
     printf("The address of i is %u\n", &i);
     printf("The value of i is %d\n", *ptr);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -1881,11 +2064,13 @@ int main(){
     printf("The address of i is %u\n", &i); 
     returning_5(ptr);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 void change_to_ten_times(int*);
@@ -1901,11 +2086,13 @@ int main(){
     printf("The value of x is %d\n", x);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 void change_to_thirty_times(int*);
@@ -1921,11 +2108,13 @@ int main(){
     printf("The value of x is %d\n", x);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -1955,11 +2144,13 @@ int main(){
     printf("The address of sum is %u and of average is %u", ptr1, ptr2 );
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/06_problem6.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -1970,11 +2161,13 @@ int main(){
     printf("The value of i is %d\n", *ptr1);
     printf("The value of i is %d\n", **ptr2);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6---Practice-Set/07_problem7.c
-```c
+```C
+
 #include <stdio.h>
 
 void change_to_thirty_times(int);
@@ -1990,11 +2183,13 @@ int main(){
     printf("The value of x is %d\n", x);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6/01_pointer.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2009,11 +2204,13 @@ int main(){
     printf("The value at address j is %d\n", *(&i));
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6/02_other_types.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2030,11 +2227,13 @@ int main(){
     printf("The value at address j is %d\n", *(&i));
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6/03_pointer2pointer.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2051,11 +2250,13 @@ int main(){
     return 0;
 }
 
+
 ```
 
 
 #### Chapter-6/04_call_by_value.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -2072,11 +2273,13 @@ int main(){
     printf("The sum of 1 and 6 is %d\n", sum(x, y));
     printf("The value of x is %d", x);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6/05_call_by_reference.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -2094,11 +2297,13 @@ int main(){
     printf("The sum of 1 and 6 is %d\n", sum(&x, &y));
     printf("The value of x is %d", x);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-6/06_swap.c
-```c
+```C
+
 #include <stdio.h>
 
 void swap(int* a, int* b);
@@ -2114,11 +2319,13 @@ int main(){
     swap(&a, &b);
     printf("The value of a is %d and the value of b is %d", a, b);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -2131,11 +2338,13 @@ int main()
     return 0;  
     
     
-}```
+}
+```
 
 
 #### Chapter-7---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2153,11 +2362,13 @@ int main(){
     
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2177,11 +2388,13 @@ int main(){
     
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 void printArray(int a[], int n){
@@ -2214,11 +2427,13 @@ int main(){
     return 0;
 }
 
+
 ```
 
 
 #### Chapter-7---Practice-Set/06_problem6.c
-```c
+```C
+
 #include <stdio.h>
 
 int count (int a[], int n){
@@ -2241,11 +2456,13 @@ int main()
     return 0;  
     
     
-}```
+}
+```
 
 
 #### Chapter-7---Practice-Set/07_problem7.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -2270,11 +2487,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7---Practice-Set/08_problem8.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -2301,11 +2520,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7---Practice-Set/09_problem9.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2324,11 +2545,13 @@ int main(){
     }
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7/01_arrays.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2339,11 +2562,13 @@ int main(){
     // We can go all the way till marks[89] 
     printf("Marks 0 and Marks 1 is %d %d", marks[0], marks[1]);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7/02_array_input.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2368,11 +2593,13 @@ int main(){
     
  
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7/03_other_array_init_ways.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2382,11 +2609,13 @@ int main(){
         printf("The value of array at index %d is %d\n", i, cgpa[i]);
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7/04_pointer_arithmetic.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2407,11 +2636,13 @@ int main(){
     ptr++;
     printf("The value of ptr is %u\n", ptr);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7/05_array_in_memory.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2431,11 +2662,13 @@ int main(){
     
  
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7/06_array_using_pointers.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2455,11 +2688,13 @@ int main(){
     
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-7/07_array_2d.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -2493,11 +2728,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2512,11 +2749,13 @@ int main(){
     
     printf("%s", str);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -2536,11 +2775,13 @@ int main(){
     
     printf("%d", strlen(str));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -2559,11 +2800,13 @@ int main(){
     
     printf("%s", slice(str, 1, 7));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 int mystrlen(char str[])
@@ -2596,11 +2839,13 @@ int main()
     mystrcpy(target, source); // target now contains "harry"
     printf("%s %s", source, target);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/06_problem6.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -2614,11 +2859,13 @@ int main(){
     printf("%s", str);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/07_problem7.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -2632,11 +2879,13 @@ int main(){
     printf("%s", str);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/08_problem8.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -2654,11 +2903,13 @@ int main(){
     printf("%d", count);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/09_problem9.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -2687,11 +2938,13 @@ int main(){
     }
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8/01_strings.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2704,11 +2957,13 @@ int main(){
     
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8/02_printing_strings.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2722,11 +2977,13 @@ int main(){
     
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8/03_input.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -2736,11 +2993,13 @@ int main(){
     printf("%s", st);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8/04_gets.c
-```c
+```C
+
 #include <stdio.h>
 
 int main()
@@ -2753,11 +3012,13 @@ int main()
     printf("hey");
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8/05_string_functions.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -2779,11 +3040,13 @@ int main()
     printf("%d", a);
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/01_problem1.c
-```c
+```C
+
 #include <stdio.h>
 
 struct vector{
@@ -2795,11 +3058,13 @@ int main(){
     struct vector v = {1, 2};
     printf("The value of vector is %di + %d j", v.i, v.j);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -2819,11 +3084,13 @@ int main(){
     V v3 = sumVector(v1, v2);
     printf("The value of vector v3 is %di + %d j", v3.i, v3.j);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 typedef struct emp{
     int salary;
@@ -2842,11 +3109,13 @@ int main(){
     printf("The value of salary is %d and the value of score is %.2f \n", ptr->salary, ptr->score);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 typedef struct c{
@@ -2858,11 +3127,13 @@ int main(){
     Complex c = {1, 2};
     printf("The value of Complex number is %d + %di ", c.real, c.imaginary);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 typedef struct c
@@ -2888,11 +3159,13 @@ int main()
     }
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/08_problem8.c
-```c
+```C
+
 #include <stdio.h>
 
 struct bankacc{
@@ -2905,11 +3178,13 @@ struct bankacc{
 int main(){
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9---Practice-Set/09_problem9.c
-```c
+```C
+
 #include <stdio.h>
 
 typedef struct Date
@@ -2959,11 +3234,13 @@ int main()
     DT d2 = {12, 8, 2154};
     printf("%d", compare(d1, d2));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/01_structure.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -2983,11 +3260,13 @@ int main(){
     printf("%d %f %s", e1.code, e1.salary, e1.name);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/02_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -3035,11 +3314,13 @@ int main(){
     printf("%d %f %s\n", e3.code, e3.salary, e3.name);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/03_struct_arrays.c
-```c
+```C
+
 #include <stdio.h>
 
 struct employee
@@ -3058,11 +3339,13 @@ int main()
     struct employee harry = {100, 71.22, "harry"};
     printf("%d %f %s", harry.code, harry.salary, harry.name);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/04_pointer_to_struct.c
-```c
+```C
+
 #include <stdio.h>
 
 struct employee
@@ -3083,11 +3366,13 @@ int main()
     printf("%d", ptr->code); // Exactly same as  (*ptr).code
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/05_quick_quiz.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -3115,11 +3400,13 @@ int main()
 
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-9/06_typedef.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -3147,11 +3434,13 @@ int main(){
     printf("%d %f %s\n", ptr1->code, ptr1->salary, ptr1->name);
     
     return 0;
-}```
+}
+```
 
 
 #### Project-1/main.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -3190,11 +3479,13 @@ int main()
 
     return 0;
 }
+
 ```
 
 
 #### Project-2/main.c
-```c
+```C
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -3253,4 +3544,5 @@ int main()
     }
 
     return 0;
-}```
+}
+```

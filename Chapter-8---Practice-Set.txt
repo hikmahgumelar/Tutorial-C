@@ -1,7 +1,8 @@
 
 
 #### Chapter-8---Practice-Set/02_problem2.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -16,11 +17,13 @@ int main(){
     
     printf("%s", str);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/03_problem3.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -40,11 +43,13 @@ int main(){
     
     printf("%d", strlen(str));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/04_problem4.c
-```c
+```C
+
 #include <stdio.h>
 
 
@@ -63,11 +68,13 @@ int main(){
     
     printf("%s", slice(str, 1, 7));
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/05_problem5.c
-```c
+```C
+
 #include <stdio.h>
 
 int mystrlen(char str[])
@@ -100,11 +107,13 @@ int main()
     mystrcpy(target, source); // target now contains "harry"
     printf("%s %s", source, target);
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/06_problem6.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -118,11 +127,13 @@ int main(){
     printf("%s", str);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/07_problem7.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -136,11 +147,13 @@ int main(){
     printf("%s", str);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/08_problem8.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -158,11 +171,13 @@ int main(){
     printf("%d", count);
     
     return 0;
-}```
+}
+```
 
 
 #### Chapter-8---Practice-Set/09_problem9.c
-```c
+```C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -191,4 +206,5 @@ int main(){
     }
     
     return 0;
-}```
+}
+```

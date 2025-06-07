@@ -1,7 +1,8 @@
 
 
 #### Chapter-3/01_conditionals.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -16,11 +17,13 @@ int main(){
         printf("Your age is divisible by 50\n");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/02_if_else.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -34,11 +37,13 @@ int main(){
         printf("Your age is not greater than 10");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/03_non_zero.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -59,11 +64,13 @@ int main(){
         printf("I am zero - I am not executed\n");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/04_logical.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -82,11 +89,13 @@ int main(){
         }
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/05_else_if.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -107,11 +116,13 @@ int main(){
 
 
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/06_ternary.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -119,11 +130,13 @@ int main(){
     int a = 345;
     int b= 345452;
     a>b?printf("a is greater"):printf("b is greater");
-}```
+}
+```
 
 
 #### Chapter-3/07_switch.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -148,11 +161,13 @@ int main(){
             printf("Nothing matched");
     }
     return 0;
-}```
+}
+```
 
 
 #### Chapter-3/08_quiz.c
-```c
+```C
+
 #include <stdio.h>
 
 int main(){
@@ -186,4 +201,5 @@ int main(){
     grade = 'F';
    }
     return 0;
-}   ```
+}   
+```
