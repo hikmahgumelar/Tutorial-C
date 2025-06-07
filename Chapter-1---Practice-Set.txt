@@ -1,7 +1,7 @@
 
 
-########### Chapter 1 - Practice Set/01_problem1.c ###########
-
+#### Chapter 1 - Practice Set/01_problem1.c
+'''C
 
 #include <stdio.h>
 
@@ -18,9 +18,12 @@ int main(){
     printf("The area of this rectangle is %d", length*breadth);
     return 0;
 }
+'''
 
-########### Chapter 1 - Practice Set/02_problem2.c ###########
 
+
+#### Chapter 1 - Practice Set/02_problem2.c
+'''C
 
 #include <stdio.h>
 
@@ -31,9 +34,12 @@ int main(){
     printf("The volume of cylinder with radius %d and height %d is %f", r, height,  3.14*r*r*height);
     return 0;
 }
+'''
 
-########### Chapter 1 - Practice Set/03_problem3.c ###########
 
+
+#### Chapter 1 - Practice Set/03_problem3.c
+'''C
 
 #include <stdio.h>
 
@@ -45,9 +51,12 @@ int main(){
 
     return 0;
 }
+'''
 
-########### Chapter 1 - Practice Set/04_problem4.c ###########
 
+
+#### Chapter 1 - Practice Set/04_problem4.c
+'''C
 
  #include <stdio.h>
  
@@ -58,3 +67,5 @@ int main(){
     printf("The value of simple interest is %f ", (p*r*t)/100);
     return 0;
  }
+'''
+

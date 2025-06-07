@@ -1,7 +1,7 @@
 
 
-########### Chapter 9 - Practice Set/01_problem1.c ###########
-
+#### Chapter 9 - Practice Set/01_problem1.c
+'''C
 
 #include <stdio.h>
 
@@ -15,9 +15,12 @@ int main(){
     printf("The value of vector is %di + %d j", v.i, v.j);
     return 0;
 }
+'''
 
-########### Chapter 9 - Practice Set/02_problem2.c ###########
 
+
+#### Chapter 9 - Practice Set/02_problem2.c
+'''C
 
 #include <stdio.h>
 
@@ -39,9 +42,12 @@ int main(){
     printf("The value of vector v3 is %di + %d j", v3.i, v3.j);
     return 0;
 }
+'''
 
-########### Chapter 9 - Practice Set/03_problem3.c ###########
 
+
+#### Chapter 9 - Practice Set/03_problem3.c
+'''C
 
 #include <stdio.h>
 typedef struct emp{
@@ -62,9 +68,12 @@ int main(){
     
     return 0;
 }
+'''
 
-########### Chapter 9 - Practice Set/04_problem4.c ###########
 
+
+#### Chapter 9 - Practice Set/04_problem4.c
+'''C
 
 #include <stdio.h>
 
@@ -78,9 +87,12 @@ int main(){
     printf("The value of Complex number is %d + %di ", c.real, c.imaginary);
     return 0;
 }
+'''
 
-########### Chapter 9 - Practice Set/05_problem5.c ###########
 
+
+#### Chapter 9 - Practice Set/05_problem5.c
+'''C
 
 #include <stdio.h>
 
@@ -108,9 +120,12 @@ int main()
 
     return 0;
 }
+'''
 
-########### Chapter 9 - Practice Set/08_problem8.c ###########
 
+
+#### Chapter 9 - Practice Set/08_problem8.c
+'''C
 
 #include <stdio.h>
 
@@ -125,9 +140,12 @@ int main(){
     
     return 0;
 }
+'''
 
-########### Chapter 9 - Practice Set/09_problem9.c ###########
 
+
+#### Chapter 9 - Practice Set/09_problem9.c
+'''C
 
 #include <stdio.h>
 
@@ -179,3 +197,5 @@ int main()
     printf("%d", compare(d1, d2));
     return 0;
 }
+'''
+

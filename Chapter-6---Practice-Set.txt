@@ -1,7 +1,7 @@
 
 
-########### Chapter 6 - Practice Set/01_problem1.c ###########
-
+#### Chapter 6 - Practice Set/01_problem1.c
+'''C
 
 #include <stdio.h>
 
@@ -12,9 +12,12 @@ int main(){
     printf("The value of i is %d\n", *ptr);
     return 0;
 }
+'''
 
-########### Chapter 6 - Practice Set/02_problem2.c ###########
 
+
+#### Chapter 6 - Practice Set/02_problem2.c
+'''C
 
 #include <stdio.h>
 
@@ -31,9 +34,12 @@ int main(){
     returning_5(ptr);
     return 0;
 }
+'''
 
-########### Chapter 6 - Practice Set/03_problem3.c ###########
 
+
+#### Chapter 6 - Practice Set/03_problem3.c
+'''C
 
 #include <stdio.h>
 
@@ -51,9 +57,12 @@ int main(){
 
     return 0;
 }
+'''
 
-########### Chapter 6 - Practice Set/04_problem4.c ###########
 
+
+#### Chapter 6 - Practice Set/04_problem4.c
+'''C
 
 #include <stdio.h>
 
@@ -71,9 +80,12 @@ int main(){
 
     return 0;
 }
+'''
 
-########### Chapter 6 - Practice Set/05_problem5.c ###########
 
+
+#### Chapter 6 - Practice Set/05_problem5.c
+'''C
 
 #include <stdio.h>
 
@@ -105,9 +117,12 @@ int main(){
 
     return 0;
 }
+'''
 
-########### Chapter 6 - Practice Set/06_problem6.c ###########
 
+
+#### Chapter 6 - Practice Set/06_problem6.c
+'''C
 
 #include <stdio.h>
 
@@ -120,9 +135,12 @@ int main(){
     printf("The value of i is %d\n", **ptr2);
     return 0;
 }
+'''
 
-########### Chapter 6 - Practice Set/07_problem7.c ###########
 
+
+#### Chapter 6 - Practice Set/07_problem7.c
+'''C
 
 #include <stdio.h>
 
@@ -140,3 +158,5 @@ int main(){
 
     return 0;
 }
+'''
+

@@ -1,7 +1,7 @@
 
 
-########### Chapter 8/01_strings.c ###########
-
+#### Chapter 8/01_strings.c
+'''C
 
 #include <stdio.h>
 
@@ -16,9 +16,12 @@ int main(){
     
     return 0;
 }
+'''
 
-########### Chapter 8/02_printing_strings.c ###########
 
+
+#### Chapter 8/02_printing_strings.c
+'''C
 
 #include <stdio.h>
 
@@ -34,9 +37,12 @@ int main(){
     
     return 0;
 }
+'''
 
-########### Chapter 8/03_input.c ###########
 
+
+#### Chapter 8/03_input.c
+'''C
 
 #include <stdio.h>
 
@@ -48,9 +54,12 @@ int main(){
 
     return 0;
 }
+'''
 
-########### Chapter 8/04_gets.c ###########
 
+
+#### Chapter 8/04_gets.c
+'''C
 
 #include <stdio.h>
 
@@ -65,9 +74,12 @@ int main()
 
     return 0;
 }
+'''
 
-########### Chapter 8/05_string_functions.c ###########
 
+
+#### Chapter 8/05_string_functions.c
+'''C
 
 #include <stdio.h>
 #include <string.h>
@@ -91,3 +103,5 @@ int main()
 
     return 0;
 }
+'''
+

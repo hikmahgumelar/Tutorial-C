@@ -1,7 +1,7 @@
 
 
-########### Chapter 8 - Practice Set/02_problem2.c ###########
-
+#### Chapter 8 - Practice Set/02_problem2.c
+'''C
 
 #include <stdio.h>
 
@@ -18,9 +18,12 @@ int main(){
     printf("%s", str);
     return 0;
 }
+'''
 
-########### Chapter 8 - Practice Set/03_problem3.c ###########
 
+
+#### Chapter 8 - Practice Set/03_problem3.c
+'''C
 
 #include <stdio.h>
 
@@ -42,9 +45,12 @@ int main(){
     printf("%d", strlen(str));
     return 0;
 }
+'''
 
-########### Chapter 8 - Practice Set/04_problem4.c ###########
 
+
+#### Chapter 8 - Practice Set/04_problem4.c
+'''C
 
 #include <stdio.h>
 
@@ -65,9 +71,12 @@ int main(){
     printf("%s", slice(str, 1, 7));
     return 0;
 }
+'''
 
-########### Chapter 8 - Practice Set/05_problem5.c ###########
 
+
+#### Chapter 8 - Practice Set/05_problem5.c
+'''C
 
 #include <stdio.h>
 
@@ -102,9 +111,12 @@ int main()
     printf("%s %s", source, target);
     return 0;
 }
+'''
 
-########### Chapter 8 - Practice Set/06_problem6.c ###########
 
+
+#### Chapter 8 - Practice Set/06_problem6.c
+'''C
 
 #include <stdio.h>
 #include <string.h>
@@ -120,9 +132,12 @@ int main(){
     
     return 0;
 }
+'''
 
-########### Chapter 8 - Practice Set/07_problem7.c ###########
 
+
+#### Chapter 8 - Practice Set/07_problem7.c
+'''C
 
 #include <stdio.h>
 #include <string.h>
@@ -138,9 +153,12 @@ int main(){
     
     return 0;
 }
+'''
 
-########### Chapter 8 - Practice Set/08_problem8.c ###########
 
+
+#### Chapter 8 - Practice Set/08_problem8.c
+'''C
 
 #include <stdio.h>
 #include <string.h>
@@ -160,9 +178,12 @@ int main(){
     
     return 0;
 }
+'''
 
-########### Chapter 8 - Practice Set/09_problem9.c ###########
 
+
+#### Chapter 8 - Practice Set/09_problem9.c
+'''C
 
 #include <stdio.h>
 #include <string.h>
@@ -193,3 +214,5 @@ int main(){
     
     return 0;
 }
+'''
+

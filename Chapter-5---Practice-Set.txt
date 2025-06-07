@@ -1,7 +1,7 @@
 
 
-########### Chapter 5 - Practice Set/01_problem1.c ###########
-
+#### Chapter 5 - Practice Set/01_problem1.c
+'''C
 
 #include <stdio.h>
 
@@ -17,9 +17,12 @@ int main(){
     printf("The average of a, b and c is %f", average(a, b, c));
     return 0;
 }
+'''
 
-########### Chapter 5 - Practice Set/02_problem2.c ###########
 
+
+#### Chapter 5 - Practice Set/02_problem2.c
+'''C
 
 #include <stdio.h>
 
@@ -34,9 +37,12 @@ int main(){
     printf("Celsius to Fahrenheit for %f is %.2f", c, c2f(c));
     return 0;
 }
+'''
 
-########### Chapter 5 - Practice Set/03_problem3.c ###########
 
+
+#### Chapter 5 - Practice Set/03_problem3.c
+'''C
 
 #include <stdio.h>
 
@@ -52,9 +58,12 @@ int main(){
     printf("The value of force is %f\n", force(m));
     return 0;
 }
+'''
 
-########### Chapter 5 - Practice Set/04_problem4.c ###########
 
+
+#### Chapter 5 - Practice Set/04_problem4.c
+'''C
 
 #include <stdio.h>
 
@@ -75,9 +84,12 @@ int main(){
     printf("The value of fibonacci series at %d is %d", n, fibonacci(n));
     return 0;
 }
+'''
 
-########### Chapter 5 - Practice Set/05_problem5.c ###########
 
+
+#### Chapter 5 - Practice Set/05_problem5.c
+'''C
 
 #include <stdio.h>
 
@@ -88,9 +100,12 @@ int main(){
     // 4 5 5
     return 0;
 }
+'''
 
-########### Chapter 5 - Practice Set/06_problem6.c ###########
 
+
+#### Chapter 5 - Practice Set/06_problem6.c
+'''C
 
 #include <stdio.h>
 
@@ -110,9 +125,12 @@ int main(){
     printf("The sum of first 5 natural numbers is %d", sum_natural(5));
     return 0;
 }
+'''
 
-########### Chapter 5 - Practice Set/07_problem7.c ###########
 
+
+#### Chapter 5 - Practice Set/07_problem7.c
+'''C
 
 #include <stdio.h>
 
@@ -137,3 +155,5 @@ int main(){
     
     return 0;
 }
+'''
+

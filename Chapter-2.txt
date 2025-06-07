@@ -1,7 +1,7 @@
 
 
-########### Chapter 2/01_variables.c ###########
-
+#### Chapter 2/01_variables.c
+'''C
 
 #include <stdio.h>
 
@@ -17,9 +17,12 @@ int main()
     printf("The value of c is %d and value of d is %d\n", c, d );
     return 0;
 }
+'''
 
-########### Chapter 2/02_arithmetic_operators.c ###########
 
+
+#### Chapter 2/02_arithmetic_operators.c
+'''C
 
 #include <stdio.h>
 
@@ -36,9 +39,12 @@ int main(){
 
     return 0;
 }
+'''
 
-########### Chapter 2/03_type_conversion.c ###########
 
+
+#### Chapter 2/03_type_conversion.c
+'''C
 
 #include <stdio.h>
 
@@ -51,9 +57,12 @@ int main(){
     printf("The value of d is %d", d);
     return 0;
 }
+'''
 
-########### Chapter 2/04_associativity.c ###########
 
+
+#### Chapter 2/04_associativity.c
+'''C
 
 #include <stdio.h>
 
@@ -72,9 +81,12 @@ int main(){
     // 102
     return 0;
 }
+'''
 
-########### Chapter 2/05_typecasting.c ###########
 
+
+#### Chapter 2/05_typecasting.c
+'''C
 
 #include <stdio.h>
 
@@ -86,3 +98,5 @@ int main(){
     printf("%d\n", n);
     return 0;
 }
+'''
+

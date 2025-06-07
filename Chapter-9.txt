@@ -1,7 +1,7 @@
 
 
-########### Chapter 9/01_structure.c ###########
-
+#### Chapter 9/01_structure.c
+'''C
 
 #include <stdio.h>
 #include <string.h>
@@ -23,9 +23,12 @@ int main(){
     
     return 0;
 }
+'''
 
-########### Chapter 9/02_quick_quiz.c ###########
 
+
+#### Chapter 9/02_quick_quiz.c
+'''C
 
 #include <stdio.h>
 #include <string.h>
@@ -75,9 +78,12 @@ int main(){
     
     return 0;
 }
+'''
 
-########### Chapter 9/03_struct_arrays.c ###########
 
+
+#### Chapter 9/03_struct_arrays.c
+'''C
 
 #include <stdio.h>
 
@@ -98,9 +104,12 @@ int main()
     printf("%d %f %s", harry.code, harry.salary, harry.name);
     return 0;
 }
+'''
 
-########### Chapter 9/04_pointer_to_struct.c ###########
 
+
+#### Chapter 9/04_pointer_to_struct.c
+'''C
 
 #include <stdio.h>
 
@@ -123,9 +132,12 @@ int main()
 
     return 0;
 }
+'''
 
-########### Chapter 9/05_quick_quiz.c ###########
 
+
+#### Chapter 9/05_quick_quiz.c
+'''C
 
 #include <stdio.h>
 #include <string.h>
@@ -155,9 +167,12 @@ int main()
 
     return 0;
 }
+'''
 
-########### Chapter 9/06_typedef.c ###########
 
+
+#### Chapter 9/06_typedef.c
+'''C
 
 #include <stdio.h>
 #include <string.h>
@@ -187,3 +202,5 @@ int main(){
     
     return 0;
 }
+'''
+

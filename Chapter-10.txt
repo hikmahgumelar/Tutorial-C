@@ -1,7 +1,7 @@
 
 
-########### Chapter 10/01_file.c ###########
-
+#### Chapter 10/01_file.c
+'''C
 
 #include <stdio.h>
 
@@ -20,9 +20,12 @@ int main()
     
     return 0;
 }
+'''
 
-########### Chapter 10/02_quick_quiz.c ###########
 
+
+#### Chapter 10/02_quick_quiz.c
+'''C
 
 #include <stdio.h>
 
@@ -49,9 +52,12 @@ int main()
     }
     return 0;
 }
+'''
 
-########### Chapter 10/03_file_write.c ###########
 
+
+#### Chapter 10/03_file_write.c
+'''C
 
 #include <stdio.h>
 
@@ -65,9 +71,12 @@ int main()
 
     return 0;
 }
+'''
 
-########### Chapter 10/04_fgetc_fputc.c ###########
 
+
+#### Chapter 10/04_fgetc_fputc.c
+'''C
 
 #include <stdio.h>
 
@@ -80,9 +89,12 @@ int main()
     fputc('c', ptr);
     return 0;
 }
+'''
 
-########### Chapter 10/05_reading_cbyc.c ###########
 
+
+#### Chapter 10/05_reading_cbyc.c
+'''C
 
 #include <stdio.h>
 
@@ -103,3 +115,5 @@ int main()
     }
         return 0;
 }
+'''
+

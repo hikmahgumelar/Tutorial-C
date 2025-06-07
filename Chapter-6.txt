@@ -1,7 +1,7 @@
 
 
-########### Chapter 6/01_pointer.c ###########
-
+#### Chapter 6/01_pointer.c
+'''C
 
 #include <stdio.h>
 
@@ -18,9 +18,12 @@ int main(){
 
     return 0;
 }
+'''
 
-########### Chapter 6/02_other_types.c ###########
 
+
+#### Chapter 6/02_other_types.c
+'''C
 
 #include <stdio.h>
 
@@ -39,9 +42,12 @@ int main(){
 
     return 0;
 }
+'''
 
-########### Chapter 6/03_pointer2pointer.c ###########
 
+
+#### Chapter 6/03_pointer2pointer.c
+'''C
 
 #include <stdio.h>
 
@@ -60,9 +66,12 @@ int main(){
 }
 
 
+'''
 
-########### Chapter 6/04_call_by_value.c ###########
 
+
+#### Chapter 6/04_call_by_value.c
+'''C
 
 #include <stdio.h>
 
@@ -81,9 +90,12 @@ int main(){
     printf("The value of x is %d", x);
     return 0;
 }
+'''
 
-########### Chapter 6/05_call_by_reference.c ###########
 
+
+#### Chapter 6/05_call_by_reference.c
+'''C
 
 #include <stdio.h>
 
@@ -103,9 +115,12 @@ int main(){
     printf("The value of x is %d", x);
     return 0;
 }
+'''
 
-########### Chapter 6/06_swap.c ###########
 
+
+#### Chapter 6/06_swap.c
+'''C
 
 #include <stdio.h>
 
@@ -123,3 +138,5 @@ int main(){
     printf("The value of a is %d and the value of b is %d", a, b);
     return 0;
 }
+'''
+
