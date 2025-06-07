@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-4---Practice-set/01_problem1.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -14,15 +13,11 @@ int main(){
     }
    
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-4---Practice-set/02_problem2.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -33,15 +28,11 @@ int main(){
     }
    
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-4---Practice-set/05_problem5.c
+```c
 #include <stdio.h>
 
 int main() {
@@ -53,15 +44,11 @@ int main() {
     }
     printf("The sum of first 10 natural numbers is %d", sum);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-4---Practice-set/06_problem6.c
+```c
 #include <stdio.h>
 
 int main()
@@ -85,15 +72,11 @@ int main()
 
     printf("The sum of first 10 natural numbers is %d", sum);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-4---Practice-set/07_problem7.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -104,15 +87,11 @@ int main(){
     }
     printf("The sum of the table of 8 is %d", sum);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-4---Practice-set/08_problem8.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -128,15 +107,11 @@ int main(){
     }
     printf("The factorial is %d", product);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-4---Practice-set/09_problem9.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -154,15 +129,11 @@ int main(){
     }
     printf("The factorial of %d is %d", n, product);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-4---Practice-set/10_problem10.c
+```c
 #include <stdio.h>
 
 int main()
@@ -196,15 +167,11 @@ int main()
     }
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-4---Practice-set/11_problem11.c
+```c
 #include <stdio.h>
 
 int main()
@@ -248,7 +215,4 @@ int main()
     }
 
     return 0;
-}
-```
-
-
+}```

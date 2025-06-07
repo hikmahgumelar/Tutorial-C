@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-5/01_function.c
+```c
 #include <stdio.h>
 
 // Function prototype
@@ -41,15 +40,11 @@ int main(){
     printf("%d\n", c3);
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5/02_quick_quiz.c
+```c
 #include <stdio.h>
 
 void good_morning();
@@ -74,15 +69,11 @@ int main(){
     good_afternoon();
     good_evening();
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5/03_change.c
+```c
 #include <stdio.h>
 
 int change(int a);
@@ -98,15 +89,11 @@ int main(){
     printf("b is %d", b); 
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5/04_quick_quiz.c
+```c
 #include <stdio.h>
 #include <math.h>
 
@@ -114,15 +101,11 @@ int main(){
     int a = 5;
     printf("The area of this square is %f\n", pow(a, 2));
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5/05_recursion.c
+```c
 #include <stdio.h>
 
 int factorial(int);
@@ -144,7 +127,4 @@ int main(){
     int a = 6;
     printf("The factorial of %d is %d", a, factorial(a));
     return 0;
-}
-```
-
-
+}```

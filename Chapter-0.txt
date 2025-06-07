@@ -1,14 +1,10 @@
 
 
-#### $file
-```C
-
+#### Chapter-0/01_first.c
+```c
 #include<stdio.h>
 
 int main(){
     printf("Hello World"); 
     return 0;
-}
-```
-
-
+}```

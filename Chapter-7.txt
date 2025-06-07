@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-7/01_arrays.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -13,15 +12,11 @@ int main(){
     // We can go all the way till marks[89] 
     printf("Marks 0 and Marks 1 is %d %d", marks[0], marks[1]);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-7/02_array_input.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -46,15 +41,11 @@ int main(){
     
  
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-7/03_other_array_init_ways.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -64,15 +55,11 @@ int main(){
         printf("The value of array at index %d is %d\n", i, cgpa[i]);
     }
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-7/04_pointer_arithmetic.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -93,15 +80,11 @@ int main(){
     ptr++;
     printf("The value of ptr is %u\n", ptr);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-7/05_array_in_memory.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -121,15 +104,11 @@ int main(){
     
  
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-7/06_array_using_pointers.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -149,15 +128,11 @@ int main(){
     
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-7/07_array_2d.c
+```c
 #include <stdio.h>
 
 int main()
@@ -191,7 +166,4 @@ int main()
     }
 
     return 0;
-}
-```
-
-
+}```

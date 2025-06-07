@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-2---Practice-Set/01_problem1.c
+```c
 #include <stdio.h>
 
 int main()
@@ -13,30 +12,22 @@ int main()
     int v = 3 * 3;
     // char dt = '21 dec 2020'; // Wrong!
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-2---Practice-Set/02_problem2.c
+```c
 #include <stdio.h>
 
 int main(){
     float a = 3.0/8 - 2;
     printf("The value of a is %f", a);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-2---Practice-Set/03_problem3.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -44,15 +35,11 @@ int main(){
     int a = 3349895;
     printf("The value of a%97 is %d", a%97);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-2---Practice-Set/04_problem4.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -67,22 +54,15 @@ int main(){
     // 0
     printf("The value of e is %f", e);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-2---Practice-Set/05_problem5.c
+```c
 #include <stdio.h>
 
 int main(){
     float a = 3.0 + 1 ;
     printf("The value of a is %f", a);
     return 0;
-}
-```
-
-
+}```

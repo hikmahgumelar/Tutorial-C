@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-5---Practice-Set/01_problem1.c
+```c
 #include <stdio.h>
 
 float average(int a, int b, int c);
@@ -16,15 +15,11 @@ int main(){
     int a = 3, b=6, c=5;
     printf("The average of a, b and c is %f", average(a, b, c));
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5---Practice-Set/02_problem2.c
+```c
 #include <stdio.h>
 
 float c2f(float);
@@ -37,15 +32,11 @@ int main(){
     float c = 45;
     printf("Celsius to Fahrenheit for %f is %.2f", c, c2f(c));
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5---Practice-Set/03_problem3.c
+```c
 #include <stdio.h>
 
 
@@ -59,15 +50,11 @@ int main(){
     int m = 45;
     printf("The value of force is %f\n", force(m));
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5---Practice-Set/04_problem4.c
+```c
 #include <stdio.h>
 
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
@@ -86,15 +73,11 @@ int main(){
     int n = 7;
     printf("The value of fibonacci series at %d is %d", n, fibonacci(n));
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5---Practice-Set/05_problem5.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -103,15 +86,11 @@ int main(){
     // 6 6 4
     // 4 5 5
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5---Practice-Set/06_problem6.c
+```c
 #include <stdio.h>
 
 
@@ -129,15 +108,11 @@ int sum_natural(int n){
 int main(){
     printf("The sum of first 5 natural numbers is %d", sum_natural(5));
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-5---Practice-Set/07_problem7.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -160,7 +135,4 @@ int main(){
     }
     
     return 0;
-}
-```
-
-
+}```

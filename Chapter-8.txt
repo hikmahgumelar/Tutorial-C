@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-8/01_strings.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -15,15 +14,11 @@ int main(){
     
     
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-8/02_printing_strings.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -37,15 +32,11 @@ int main(){
     
     
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-8/03_input.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -55,15 +46,11 @@ int main(){
     printf("%s", st);
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-8/04_gets.c
+```c
 #include <stdio.h>
 
 int main()
@@ -76,15 +63,11 @@ int main()
     printf("hey");
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-8/05_string_functions.c
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -106,7 +89,4 @@ int main()
     printf("%d", a);
 
     return 0;
-}
-```
-
-
+}```

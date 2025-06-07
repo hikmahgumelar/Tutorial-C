@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-10/01_file.c
+```c
 #include <stdio.h>
 
 int main()
@@ -19,15 +18,11 @@ int main()
     fclose(ptr);
     
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-10/02_quick_quiz.c
+```c
 #include <stdio.h>
 
 int main()
@@ -52,15 +47,11 @@ int main()
     
     }
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-10/03_file_write.c
+```c
 #include <stdio.h>
 
 int main()
@@ -72,15 +63,11 @@ int main()
     fclose(fptr);
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-10/04_fgetc_fputc.c
+```c
 #include <stdio.h>
 
 int main()
@@ -91,15 +78,11 @@ int main()
     // printf("%c", c);
     fputc('c', ptr);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-10/05_reading_cbyc.c
+```c
 #include <stdio.h>
 
 int main()
@@ -118,7 +101,4 @@ int main()
         }
     }
         return 0;
-}
-```
-
-
+}```

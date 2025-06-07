@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-6/01_pointer.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -17,15 +16,11 @@ int main(){
     printf("The value at address j is %d\n", *(&i));
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-6/02_other_types.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -42,15 +37,11 @@ int main(){
     printf("The value at address j is %d\n", *(&i));
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-6/03_pointer2pointer.c
+```c
 #include <stdio.h>
 
 int main(){
@@ -67,15 +58,11 @@ int main(){
     return 0;
 }
 
-
 ```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-6/04_call_by_value.c
+```c
 #include <stdio.h>
 
 
@@ -92,15 +79,11 @@ int main(){
     printf("The sum of 1 and 6 is %d\n", sum(x, y));
     printf("The value of x is %d", x);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-6/05_call_by_reference.c
+```c
 #include <stdio.h>
 
 
@@ -118,15 +101,11 @@ int main(){
     printf("The sum of 1 and 6 is %d\n", sum(&x, &y));
     printf("The value of x is %d", x);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-6/06_swap.c
+```c
 #include <stdio.h>
 
 void swap(int* a, int* b);
@@ -142,7 +121,4 @@ int main(){
     swap(&a, &b);
     printf("The value of a is %d and the value of b is %d", a, b);
     return 0;
-}
-```
-
-
+}```

@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-11---Practice-Set/01_problem1.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,15 +13,11 @@ int main(){
     printf("%d \n", ptr[0]);
     
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-11---Practice-Set/02_problem2.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -43,15 +38,11 @@ int main()
     }
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-11---Practice-Set/03_problem3.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -72,15 +63,11 @@ int main()
     }
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-11---Practice-Set/04_problem4.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -118,15 +105,11 @@ int main()
     }
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-11---Practice-Set/05_problem5.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -164,15 +147,11 @@ int main()
     }
 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-11---Practice-Set/06_problem6.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -210,7 +189,4 @@ int main()
     }
 
     return 0;
-}
-```
-
-
+}```

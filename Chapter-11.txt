@@ -1,8 +1,7 @@
 
 
-#### $file
-```C
-
+#### Chapter-11/01_dma.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -16,15 +15,11 @@ int main(){
     ptr [1]= 6;
     printf("%d", ptr[0]);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-11/02_quick_quiz.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -45,15 +40,11 @@ int main(){
     printf("%.2f\n", ptr[3]);
     printf("%.2f\n", ptr[4]); 
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-11/03_quick_quiz.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -66,15 +57,11 @@ int main(){
     ptr[0] = 3; 
     printf("%d", ptr[0]);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-11/04_free.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -88,15 +75,11 @@ int main(){
     free(ptr);
     printf("%d", ptr[0]);
     return 0;
-}
-```
+}```
 
 
-
-
-#### $file
-```C
-
+#### Chapter-11/05_realloc.c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -110,7 +93,4 @@ int main(){
     ptr = (int*) realloc(ptr, 10 * sizeof(int)); 
     printf("%d", ptr[0]);
     return 0;
-}
-```
-
-
+}```
