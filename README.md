@@ -3629,7 +3629,7 @@ int main()
 
 
 #### Project 2/main.c
-'''C
+```C
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -3690,5 +3690,5 @@ int main()
 
     return 0;
 }
-'''
+```
 
