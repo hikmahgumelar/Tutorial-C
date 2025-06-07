@@ -1,0 +1,136 @@
+
+
+########### Chapter 3 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    if (a = 11)
+        printf("I am 11"); 
+    else
+        printf("I am not 11"); 
+    return 0;
+}
+
+########### Chapter 3 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int marks1, marks2, marks3;
+    // int value_of_harrys_marks;
+    // int value_of_rohans_marks;
+    // printf("%d",value_of_harrys_marks )
+    printf("Enter marks1: \n");
+    scanf("%d", &marks1);
+    printf("Enter marks2: \n");
+    scanf("%d", &marks2);
+    printf("Enter marks3: \n");
+    scanf("%d", &marks3);
+    printf("The marks are %d %d and %d\n", marks1, marks2, marks3);
+
+    if(marks1<33 || marks2<33 || marks3<33){
+        printf("You are failed due to less marks in individual subject(s)\n"); 
+    }
+    else if((marks1 + marks2 + marks3)/3 <40){
+        printf("You are failed due less percentage\n"); 
+    }
+    else{
+        printf("You are passed!");
+    }
+    return 0;
+}
+
+########### Chapter 3 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int income;
+    float tax=0; 
+    printf("Enter income: \n");
+    scanf("%d", &income);
+    if(income<=250000){
+        tax = 0;
+    }
+    else if(income>250000 && income<=500000){
+        tax = 0.05 * (income - 250000);
+    }
+    else if(income>500000 && income<=1000000){
+        tax = 0.05 * (500000 - 250000) + 0.2 * (income- 500000);
+    }
+    else {
+        tax = 0.05 * (500000 - 250000) + 0.2 * (1000000- 500000) + 0.3 * (income - 1000000);
+    }
+    printf("The total tax you need to pay is %.3f", tax);
+    return 0;
+}
+
+########### Chapter 3 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int year; 
+    printf("Enter year: \n");
+    scanf("%d", &year);
+
+    if((year %4==0 && year%100!=0) || year %400==0){
+        printf("This is a leap year");
+    }
+    else{
+        printf("This is not a leap year");
+    }
+
+
+    return 0;
+}
+
+########### Chapter 3 - Practice Set/05_problem5.c ###########
+
+
+// https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html
+
+#include <stdio.h>
+
+int main(){
+    char ch = 'A';
+    printf("The character is %c\n", ch);
+    printf("The value of character is %d\n", ch);
+    // 97, 122
+    if(ch >= 97 && ch<=122){
+        printf("This character is lowercase\n");
+    }
+    else{
+         printf("This character not lowecase \n");
+    }
+    return 0;
+}
+
+########### Chapter 3 - Practice Set/06_problem.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int a=4, b=2, c=116, d=32;
+    if(a>b && a>c && a>d){
+        printf("The greatest of all is %d", a);
+    }
+    else if(b>a && b>c && b>d){
+        printf("The greatest of all is %d", b);
+    }
+    else if(c>a && c>b && c>d){
+        printf("The greatest of all is %d", c);
+    }
+    else if(d>a && d>c && d>b){
+        printf("The greatest of all is %d", d);
+    }
+    return 0;
+}

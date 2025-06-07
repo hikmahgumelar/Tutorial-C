@@ -1,0 +1,195 @@
+
+
+########### Chapter 8 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    char str[6];
+    // scanf("%s", str);
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%c", &str[i]); 
+        fflush(stdin);
+    }
+    str[5] = '\0';
+    
+    printf("%s", str);
+    return 0;
+}
+
+########### Chapter 8 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+
+
+int strlen(char str[]){
+    int i=0, count;
+    char c = str[i];
+    while(c!='\0'){
+        c = str[i];
+        i++;
+    } 
+    count = i-1;
+    return count;
+
+}
+int main(){
+    char str[] = "Harry bhai";
+    
+    printf("%d", strlen(str));
+    return 0;
+}
+
+########### Chapter 8 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+
+
+char* slice(char str[], int m, int n){
+    int i=0, count;  
+    char *ptr1 = &str[m];
+    char *ptr2 = &str[n];
+
+    str = ptr1;
+    str[n] = '\0';
+    return str;
+
+}
+int main(){
+    char str[] = "Harry bhai";
+    
+    printf("%s", slice(str, 1, 7));
+    return 0;
+}
+
+########### Chapter 8 - Practice Set/05_problem5.c ###########
+
+
+#include <stdio.h>
+
+int mystrlen(char str[])
+{
+    int i = 0, count;
+    char c = str[i];
+    while (c != '\0')
+    {
+        c = str[i];
+        i++;
+    }
+    count = i - 1;
+    return count;
+}
+
+void mystrcpy(char target[], char source[])
+{
+    for (int i = 0; i < mystrlen(source); i++)
+    {
+        target[i] = source[i];
+    }
+    target[mystrlen(source)] = '\0';
+}
+
+
+int main()
+{
+    char source[] = "harry";
+    char target[30];
+    mystrcpy(target, source); // target now contains "harry"
+    printf("%s %s", source, target);
+    return 0;
+}
+
+########### Chapter 8 - Practice Set/06_problem6.c ###########
+
+
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char str[] = "Mera saara paisa takiye ke neeche black poly me hai";
+    for (int i = 0; i < strlen(str); i++)
+    {
+       str[i] = str[i] + 1;
+    }
+
+    printf("%s", str);
+    
+    return 0;
+}
+
+########### Chapter 8 - Practice Set/07_problem7.c ###########
+
+
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char str[] = "Nfsb!tbbsb!qbjtb!ubljzf!lf!offdif!cmbdl!qpmz!nf!ibj";
+    for (int i = 0; i < strlen(str); i++)
+    {
+       str[i] = str[i] - 1;
+    }
+
+    printf("%s", str);
+    
+    return 0;
+}
+
+########### Chapter 8 - Practice Set/08_problem8.c ###########
+
+
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char c = 'r';
+    int count = 0;
+    char str[] = "Harry";
+    for (int i = 0; i < strlen(str); i++)
+    {
+       if(str[i] == c){
+        count++;
+       }
+    }
+
+    printf("%d", count);
+    
+    return 0;
+}
+
+########### Chapter 8 - Practice Set/09_problem9.c ###########
+
+
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char c = 'd';
+    int contains = 0;
+    char str[] = "Harry";
+    for (int i = 0; i < 56; i++)
+    {
+       printf("This is a nice character  \n");  
+    }
+    
+    for (int i = 0; i < strlen(str); i++)
+    {
+       if(str[i] == c){
+        contains = 1;
+        break; // This break statement will exit the loop once the character is found!
+       }
+    }
+    if(contains){
+        printf("Yes it contains!\n");
+    }
+    else{
+        printf("Does not contain! \n");
+        
+    }
+    
+    return 0;
+}

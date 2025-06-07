@@ -1,0 +1,60 @@
+
+
+########### Chapter 1 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    // int length = 3;
+    // int breadth = 6;
+    int length, breadth;
+    printf("Enter length\n");
+    scanf("%d", &length);
+
+    printf("Enter breadth\n");
+    scanf("%d", &breadth);
+
+    printf("The area of this rectangle is %d", length*breadth);
+    return 0;
+}
+
+########### Chapter 1 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int r = 6;
+    int height = 10;
+    printf("The area of circle with radius %d is %f\n", r, 3.14*r*r);
+    printf("The volume of cylinder with radius %d and height %d is %f", r, height,  3.14*r*r*height);
+    return 0;
+}
+
+########### Chapter 1 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    float c = 37.0, f;
+
+    f = ((9.0/5.0)*c) + 32;
+    printf("The value in Fahrenheit is %f", f);
+
+    return 0;
+}
+
+########### Chapter 1 - Practice Set/04_problem4.c ###########
+
+
+ #include <stdio.h>
+ 
+ int main(){
+    float p = 34.1;
+    int r = 8;
+    int t = 5;
+    printf("The value of simple interest is %f ", (p*r*t)/100);
+    return 0;
+ }

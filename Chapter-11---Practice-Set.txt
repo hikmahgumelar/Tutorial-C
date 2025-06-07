@@ -1,0 +1,193 @@
+
+
+########### Chapter 11 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){ 
+    int n = 6;
+    int* ptr;
+    ptr = (int*) malloc(n*sizeof(int));
+    ptr[0] = 45;
+    printf("%d \n", ptr[0]);
+    
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 6;
+    int *ptr;
+    ptr = (int *)malloc(n * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &ptr[i]);
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 6;
+    int *ptr;
+    ptr = (int *)calloc(n,  sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &ptr[i]);
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 5;
+    int *ptr;
+    ptr = (int *)calloc(n, sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &ptr[i]);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    n = 10;
+    ptr = (int *)realloc(ptr, 10 * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &ptr[i]);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/05_problem5.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 10;
+    int *ptr;
+    ptr = (int *)malloc(n *sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+      ptr[i] = 7 * (i+1);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    n = 15;
+    ptr = (int *)realloc(ptr, 10 * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        ptr[i] = 7 * (i+1);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}
+
+########### Chapter 11 - Practice Set/06_problem6.c ###########
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 10;
+    int *ptr;
+    ptr = (int *)calloc(n, sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+      ptr[i] = 7 * (i+1);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    n = 15;
+    ptr = (int *)realloc(ptr, 10 * sizeof(int));
+
+    for (int i = 0; i < n; i++)
+    {
+        ptr[i] = 7 * (i+1);
+    }
+
+    printf("The Array is \n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d \n", ptr[i]);
+    }
+
+    return 0;
+}

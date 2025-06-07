@@ -1,0 +1,69 @@
+
+
+########### Chapter 2 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    // Which of the following is invalid in C?
+    int a = 1;
+    int b = a;
+    int v = 3 * 3;
+    // char dt = '21 dec 2020'; // Wrong!
+    return 0;
+}
+
+########### Chapter 2 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    float a = 3.0/8 - 2;
+    printf("The value of a is %f", a);
+    return 0;
+}
+
+########### Chapter 2 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    // int a = 2342354;
+    int a = 3349895;
+    printf("The value of a%97 is %d", a%97);
+    return 0;
+}
+
+########### Chapter 2 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    // Explain step by step evaluation of 3*x/y – z+k, where x=2, y=3, z=3, k=1
+    int x=2, y=3, z=3, k=1;
+    float e = 3*x/y - z+k;
+    // 3*x/y - z+k;
+    // 6/y - z+k;
+    // 2-z+k;
+    // -1+k 
+    // -1 + 1 
+    // 0
+    printf("The value of e is %f", e);
+    return 0;
+}
+
+########### Chapter 2 - Practice Set/05_problem5.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    float a = 3.0 + 1 ;
+    printf("The value of a is %f", a);
+    return 0;
+}

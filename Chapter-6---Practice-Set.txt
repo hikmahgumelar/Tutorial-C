@@ -1,0 +1,142 @@
+
+
+########### Chapter 6 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int i = 2;
+    int* ptr = &i;
+    printf("The address of i is %u\n", &i);
+    printf("The value of i is %d\n", *ptr);
+    return 0;
+}
+
+########### Chapter 6 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+
+int returning_5(int* ptr){
+    printf("The value of ptr is %d\n", ptr); 
+    printf("The value at ptr is %d\n", *ptr); 
+    return 5;
+}
+int main(){
+    int i = 2;
+    int* ptr = &i;
+    printf("The address of i is %u\n", &i); 
+    returning_5(ptr);
+    return 0;
+}
+
+########### Chapter 6 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+
+void change_to_ten_times(int*);
+
+void change_to_ten_times(int* a){
+    *a = *a * 10;
+}
+
+int main(){
+    int x = 45;
+    printf("The value of x is %d\n", x);
+    change_to_ten_times(&x);
+    printf("The value of x is %d\n", x);
+
+    return 0;
+}
+
+########### Chapter 6 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+
+void change_to_thirty_times(int*);
+
+void change_to_thirty_times(int* a){
+    *a = *a * 10;
+}
+
+int main(){
+    int x = 45;
+    printf("The value of x is %d\n", x);
+    change_to_thirty_times(&x);
+    printf("The value of x is %d\n", x);
+
+    return 0;
+}
+
+########### Chapter 6 - Practice Set/05_problem5.c ###########
+
+
+#include <stdio.h>
+
+
+int* sum(int a, int b){
+    int s = a+b;
+    int* ptr = &s;
+    printf("The sum is %d\n", s);
+    return ptr;
+}
+
+float* average(int a, int b){
+    float avg =  (a+b)/2.0;
+    float * ptr = &avg;
+    printf("The average is %f\n", avg);
+    return ptr;
+}
+
+int main(){
+    int x = 4; 
+    int y = 6;
+    int* ptr1;
+    float* ptr2;
+
+    ptr1 = sum(x,y);
+    ptr2 = average(x,y);
+
+    printf("The address of sum is %u and of average is %u", ptr1, ptr2 );
+
+    return 0;
+}
+
+########### Chapter 6 - Practice Set/06_problem6.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int i = 2;
+    int* ptr1 = &i;
+    int** ptr2 = &ptr1;
+    printf("The address of i is %u\n", &i);
+    printf("The value of i is %d\n", *ptr1);
+    printf("The value of i is %d\n", **ptr2);
+    return 0;
+}
+
+########### Chapter 6 - Practice Set/07_problem7.c ###########
+
+
+#include <stdio.h>
+
+void change_to_thirty_times(int);
+
+void change_to_thirty_times(int a){
+    a = a * 10;
+}
+
+int main(){
+    int x = 45;
+    printf("The value of x is %d\n", x);
+    change_to_thirty_times(x);
+    printf("The value of x is %d\n", x);
+
+    return 0;
+}

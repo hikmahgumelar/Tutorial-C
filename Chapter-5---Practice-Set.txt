@@ -1,0 +1,139 @@
+
+
+########### Chapter 5 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+
+float average(int a, int b, int c);
+
+float average(int a, int b, int c){
+    return (a+b+c)/3.0;
+}
+
+
+int main(){
+    int a = 3, b=6, c=5;
+    printf("The average of a, b and c is %f", average(a, b, c));
+    return 0;
+}
+
+########### Chapter 5 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+float c2f(float);
+
+float c2f(float c){
+    return ((9*c)/5) + 32;
+}
+
+int main(){
+    float c = 45;
+    printf("Celsius to Fahrenheit for %f is %.2f", c, c2f(c));
+    return 0;
+}
+
+########### Chapter 5 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+
+
+float force(float);
+
+float force(float mass){
+    return mass*9.8;
+}
+
+int main(){
+    int m = 45;
+    printf("The value of force is %f\n", force(m));
+    return 0;
+}
+
+########### Chapter 5 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+// fibonacci(n) = fibonacci(n-1) + fibonacci(n-2);
+
+int fibonacci(int);
+
+int fibonacci(int n){
+    if(n == 1 || n==2){
+        return n-1;
+    }
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+ 
+int main(){
+    int n = 7;
+    printf("The value of fibonacci series at %d is %d", n, fibonacci(n));
+    return 0;
+}
+
+########### Chapter 5 - Practice Set/05_problem5.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int a = 4; 
+    printf("%d %d %d \n", a, ++a, a++);
+    // 6 6 4
+    // 4 5 5
+    return 0;
+}
+
+########### Chapter 5 - Practice Set/06_problem6.c ###########
+
+
+#include <stdio.h>
+
+
+int sum_natural(int);
+
+int sum_natural(int n){
+    if(n==1){
+        return 1;
+    }
+    // sum_natural(n) = 1 + 2 + 3 + 4 + 5 + ... n-1 + n;
+    // sum_natural(n) = sum(n-1) + n;
+    return sum_natural(n-1) + n;
+
+}
+int main(){
+    printf("The sum of first 5 natural numbers is %d", sum_natural(5));
+    return 0;
+}
+
+########### Chapter 5 - Practice Set/07_problem7.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int n = 3;
+    for (int i = 0; i < n; i++)
+    {
+        // This loop runs from 0 to 2
+        // if i = 0 ---> print 1 star 
+        // if i = 1 ---> print 3 stars 
+        // if i = 2 ---> print 5 stars 
+        // no_of_stars = (2*i+1)
+
+        // This for loop prints (2*i+1) stars 
+        for(int j=0; j<2*i+1;j++){
+            printf("*");
+        }
+
+        // This printf prints a new line 
+        printf("\n");
+    }
+    
+    return 0;
+}

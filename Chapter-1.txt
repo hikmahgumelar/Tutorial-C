@@ -1,0 +1,106 @@
+
+
+########### Chapter 1/01_variables.c ###########
+
+
+#include<stdio.h>
+
+int main(){
+    int a; // Variable declaration
+    a = 6; // Variable initialization
+    printf("The output of this program is %d", a);
+    return 0;
+}
+
+########### Chapter 1/02_variable_rules.c ###########
+
+
+#include<stdio.h>
+
+int main(){
+    int harry;
+    int Harry; 
+    int harry_good;
+    return 0;
+}
+
+########### Chapter 1/03_data_types.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    // int a;
+    // a = 1;
+    int a = 1;
+
+    // float b = 1.4;
+    float b;
+    b = 1.4;
+
+    // char c = 'a';
+    char c;
+    c = 'a';
+
+    printf("The value of a is %d\n", a);
+    printf("The value of b is %f\n", b);
+    printf("The value of c is %c\n", c);
+}
+
+########### Chapter 1/04_sizeof.c ###########
+
+
+#include <stdio.h>
+
+int main() {
+    printf("Size of int: %zu bytes\n", sizeof(int));
+    printf("Size of char: %zu byte\n", sizeof(char));
+    printf("Size of float: %zu bytes\n", sizeof(float));
+    return 0;
+}
+
+
+########### Chapter 1/05_comments.c ###########
+
+
+/*
+Program: 05_comments.c
+Author: Harry
+Date: 3 October 2030
+*/
+#include<stdio.h>
+
+int main(){
+    
+    // I am writing this just for fun. This line doesnt do anything
+    printf("Hello World");
+    // Return 0 is returning 0 to the OS
+    return 0; // This is return 
+}
+
+########### Chapter 1/06_input.c ###########
+
+
+#include<stdio.h>
+
+int main(){
+    int a; 
+    scanf("%d", &a);
+    printf("The value of a is %d", a);
+    return 0;
+}
+
+########### Chapter 1/07_escape_sequence.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    int a;
+    char ch = 'a';
+    ch = 'c';
+    ch = '\n'; // represents a new line
+    printf("Hey I am good \\n nice");
+    return 0;
+}

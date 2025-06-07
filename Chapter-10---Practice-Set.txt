@@ -1,0 +1,126 @@
+
+
+########### Chapter 10 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    FILE *fptr;
+    int num1, num2, num3;
+    fptr = fopen("file.txt", "r");
+    fscanf(fptr, "%d %d %d", &num1, &num2, &num3); 
+    printf("The values are %d %d %d \n", num1, num2, num3);
+    
+    fclose(fptr);
+    return 0;
+}
+
+########### Chapter 10 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    FILE *fptr; 
+    int num=4;
+    fptr = fopen("table.txt", "w");
+
+    for (int i = 0; i < 10; i++)
+    {
+        fprintf(fptr, "%d", num*(i+1));
+        fprintf(fptr, "%c", '\n');
+    }
+    
+    return 0;
+}
+
+########### Chapter 10 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    FILE *ptr;
+    FILE *ptr2;
+
+    ptr = fopen("harry.txt", "r");
+    ptr2 = fopen("harry3.txt", "a");
+    while (1)
+    {
+       
+        ch = fgetc(ptr); 
+        // when all the content of a file has been read break
+        if (ch == EOF)
+        {
+            break;
+        }
+        else{
+            fprintf(ptr2, "%c", ch);
+            fprintf(ptr2, "%c", ch);
+            printf("%c", ch);
+        }
+    }
+        return 0;
+}
+
+########### Chapter 10 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    FILE *ptr;
+    char name1[34], name2[34];
+    int salary1, salary2;
+    ptr = fopen("salary.txt", "w");
+
+    printf("Enter the name of Employee \n");
+    scanf("%s", name1);
+
+    printf("Enter the salary of Employee \n");
+    scanf("%d", &salary1);
+
+    printf("Enter the name of Employee 2\n");
+    scanf("%s", name2);
+
+    printf("Enter the salary of Employee 2\n");
+    scanf("%d", &salary2);
+
+    fprintf(ptr, "%s", name1);
+    fprintf(ptr, "%s", ", ");
+    fprintf(ptr, "%d", salary1);
+    fprintf(ptr, "%c", '\n');
+     fprintf(ptr, "%s", name2);
+    fprintf(ptr, "%s", ", ");
+    fprintf(ptr, "%d", salary2);
+    fprintf(ptr, "%c", '\n');
+
+    return 0;
+}
+
+########### Chapter 10 - Practice Set/05_problem5.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    FILE *ptr;  
+    int num;
+    ptr = fopen("int.txt", "r");
+    fscanf(ptr, "%d", &num); 
+
+    fclose(ptr);
+
+    ptr = fopen("int.txt", "w");
+    fprintf(ptr, "%d", 2*num); 
+
+    fclose(ptr);
+ 
+
+    return 0;
+}

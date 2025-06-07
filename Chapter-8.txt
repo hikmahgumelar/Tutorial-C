@@ -1,0 +1,93 @@
+
+
+########### Chapter 8/01_strings.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    // char st[] = {'a', 'b', 'c', '\0'};
+    char st[] = "abc"; // Same as doing char st[] = {'a', 'b', 'c', '\0'};
+    for (int i = 0; i < 3; i++)
+    {
+    printf("Character is %c \n", st[i]);  
+    }
+    
+    
+    return 0;
+}
+
+########### Chapter 8/02_printing_strings.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    // char st[] = {'a', 'b', 'c', '\0'};
+    char st[] = "abc"; // Same as doing char st[] = {'a', 'b', 'c', '\0'};
+    // for (int i = 0; i < 3; i++){
+    //     printf("%c", st[i]);  
+    // }
+
+    printf("%s", st);
+    
+    
+    return 0;
+}
+
+########### Chapter 8/03_input.c ###########
+
+
+#include <stdio.h>
+
+int main(){
+    char st[4];
+    scanf("%s", st);
+
+    printf("%s", st);
+
+    return 0;
+}
+
+########### Chapter 8/04_gets.c ###########
+
+
+#include <stdio.h>
+
+int main()
+{
+    char st[30];
+    gets(st); // The entered string is stored in st!
+
+    printf("%s", st);
+    // puts(st);
+    printf("hey");
+
+    return 0;
+}
+
+########### Chapter 8/05_string_functions.c ###########
+
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char st[] = "Harry";
+    char s1[56] = "Harry";
+    char s2[56] = " bhai";
+
+    // printf("%d", strlen(st));
+    char target[30];
+    strcpy(target, st); // target now contains "Harry"
+    // printf("%s %s", st, target);
+
+    strcat(s1, s2); // s1 now contains "helloharry" <no space in between>
+    // printf("%s", s1);
+
+    int a = strcmp("deep", "joke"); // DJ is negative
+    printf("%d", a);
+
+    return 0;
+}

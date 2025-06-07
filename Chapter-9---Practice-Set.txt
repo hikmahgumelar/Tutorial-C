@@ -1,0 +1,181 @@
+
+
+########### Chapter 9 - Practice Set/01_problem1.c ###########
+
+
+#include <stdio.h>
+
+struct vector{
+    int i;
+    int j;
+};
+
+int main(){
+    struct vector v = {1, 2};
+    printf("The value of vector is %di + %d j", v.i, v.j);
+    return 0;
+}
+
+########### Chapter 9 - Practice Set/02_problem2.c ###########
+
+
+#include <stdio.h>
+
+
+typedef struct vector{
+    int i;
+    int j;
+} V;
+
+V sumVector(V v1, V v2){
+    V v3 = {v1.i + v2.i, v1.j + v2.j};
+    return v3;
+}
+
+int main(){
+    V v1 = {1, 2};
+    V v2 = {5, 6};
+    V v3 = sumVector(v1, v2);
+    printf("The value of vector v3 is %di + %d j", v3.i, v3.j);
+    return 0;
+}
+
+########### Chapter 9 - Practice Set/03_problem3.c ###########
+
+
+#include <stdio.h>
+typedef struct emp{
+    int salary;
+    float score;
+} Employee;
+
+int main(){
+    Employee e1;
+    Employee* ptr = &e1;
+    (*ptr).salary = 56;
+    (*ptr).score = 45.3;
+
+    // ptr->salary = 56;
+    // ptr->score = 45.3;
+
+    printf("The value of salary is %d and the value of score is %.2f \n", ptr->salary, ptr->score);
+    
+    return 0;
+}
+
+########### Chapter 9 - Practice Set/04_problem4.c ###########
+
+
+#include <stdio.h>
+
+typedef struct c{
+    int real;
+    int imaginary;
+} Complex;
+
+int main(){
+    Complex c = {1, 2};
+    printf("The value of Complex number is %d + %di ", c.real, c.imaginary);
+    return 0;
+}
+
+########### Chapter 9 - Practice Set/05_problem5.c ###########
+
+
+#include <stdio.h>
+
+typedef struct c
+{
+    int real;
+    int imaginary;
+} Complex;
+
+void display(Complex c)
+{
+    printf("The value of Complex number is %d + %di \n", c.real, c.imaginary);
+}
+int main()
+{
+    Complex carr[5];
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Enter real part \n");
+        scanf("%d", &carr[i].real);
+        printf("Enter imaginary part \n");
+        scanf("%d", &carr[i].imaginary);
+        display(carr[i]);
+    }
+
+    return 0;
+}
+
+########### Chapter 9 - Practice Set/08_problem8.c ###########
+
+
+#include <stdio.h>
+
+struct bankacc{
+    int accNo;
+    char name[34];
+    char ifsc[12];
+    float balance; 
+};
+
+int main(){
+    
+    return 0;
+}
+
+########### Chapter 9 - Practice Set/09_problem9.c ###########
+
+
+#include <stdio.h>
+
+typedef struct Date
+{
+    int mm;
+    int dd;
+    int yyyy;
+} DT;
+
+int compare(DT d1, DT d2)
+{
+    // if d1 is in the future, return 1
+    if ((d1.yyyy == d2.yyyy) && (d1.mm == d2.mm) && (d1.dd == d2.dd))
+    {
+        return 0;
+    }
+
+    if (d1.yyyy > d2.yyyy)
+    {
+        return 1;
+    }
+    else if (d1.yyyy < d2.yyyy)
+    {
+        return -1;
+    }
+    else if (d1.mm > d2.mm)
+    {
+        return 1;
+    }
+    else if (d1.mm < d2.mm)
+    {
+        return -1;
+    }
+    else if (d1.dd > d2.dd)
+    {
+        return 1;
+    }
+    else if (d1.dd < d2.dd)
+    {
+        return -1;
+    }
+}
+
+int main()
+{
+    DT d1 = {12, 4, 2154};
+    DT d2 = {12, 8, 2154};
+    printf("%d", compare(d1, d2));
+    return 0;
+}
